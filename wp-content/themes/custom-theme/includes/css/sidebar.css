@@ -1,0 +1,211 @@
+/* Starter CSS for Flyout Menu */
+.sidenav {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+.sidenav ul,
+.sidenav ul li,
+.sidenav ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidenav ul {
+  position: relative;
+  z-index: 597;
+}
+
+.sidenav ul li {
+  float: left;
+  min-height: 1px;
+  line-height: 1em;
+  vertical-align: middle;
+  position: relative;
+}
+.sidenav ul li.hover,
+.sidenav ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+.sidenav ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 598;
+  width: 100%;
+}
+.sidenav ul ul li {
+  float: none;
+}
+
+.sidenav ul li:hover ul {
+  visibility: visible;
+}
+.sidenav ul ul {
+  top: 0px;
+  left: 99%;
+}
+.sidenav ul li {
+  float: none;
+}
+.sidenav ul ul {
+  margin-top: 1px;
+  width: 140%;
+}
+
+.sidenav ul ul li {
+    border-bottom: 1px dashed #fff;
+    width: 100%;
+    margin: auto;
+    padding: 3.5% 5%;
+     font-weight: normal;
+}
+
+
+.sidenav ul ul ul {
+  display: block;
+   position: relative;
+   left: 0;
+   width: 100%;
+}
+
+/* Custom CSS Styles */
+.sidenav {
+  margin-top: 2%;
+  background: #d4952f;
+  padding: 0;
+  zoom: 1;
+}
+
+.sidenav:before {
+  content: '';
+  display: block;
+}
+.sidenav:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.sidenav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.sidenav > ul {
+  /*width: 200px;*/
+}
+.sidenav ul ul {
+  /*width: 200px;*/
+  background: #d4952f;
+  color: #fff;
+  text-align: left;
+  text-indent: 0;
+}
+.sidenav > ul > li > a {
+  /*border-right: 4px solid #1b9bff;
+  color: #ffffff;*/
+}
+.sidenav > ul > li > a:hover {
+  /*color: #ffffff;*/
+}
+.sidenav > ul > li.active a {
+  background: #1b9bff;
+}
+.sidenav > ul > li a:hover,
+.sidenav > ul > li:hover a {
+  /*background: #1b9bff;*/
+}
+.sidenav li {
+  position: relative;
+}
+
+.sidenav ul li.menu-item-has-children > a:after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  right:15px;
+  margin-top: -6px;
+}
+.sidenav ul ul li.first {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+.sidenav ul ul li.last {
+  -webkit-border-radius: 0 0 3px 0;
+  -moz-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
+  border-bottom: 0;
+}
+.sidenav ul ul {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.sidenav ul ul {
+  /*border: 1px solid #0082e7;*/
+
+}
+.sidenav ul ul a {
+  color: #fff;
+  font-size: 1vw;
+}
+.sidenav ul ul a:hover {
+  color: #fff;
+}
+.sidenav ul ul li {
+border-bottom: 1px dashed #fff;
+  width: 86%;
+  margin:auto; padding: 3.5% 2%;
+}
+.sidenav ul ul li:hover > a {
+  /*background: #4eb1ff;*/
+  color: #fff; 
+}
+.sidenav.align-right > ul > li > a {
+  border-left: 4px solid #1b9bff;
+  border-right: none;
+}
+.sidenav.align-right {
+  float: right;
+}
+.sidenav.align-right li {
+  text-align: right;
+}
+.sidenav.align-right ul li.menu-item-has-children > a:before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  margin-top: -6px;
+}
+.sidenav.align-right ul li.menu-item-has-children > a:after {
+  content: none;
+}
+.sidenav.align-right ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 598;
+  width: 100%;
+}
+.sidenav.align-right ul ul li.first {
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+}
+.sidenav.align-right ul ul li.last {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+.sidenav.align-right ul ul {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}

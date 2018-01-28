@@ -1,0 +1,1978 @@
+/*
+Theme Name: Custom Wine Cellars Template
+Author: Romwil Dalisay
+Version: 1.2
+*/
+
+/*
+@import url('menu-iyc.css');
+@import url('css/side_sidebar.css');
+*/
+
+/*------------------------------------*\
+    Default Hidden
+\*------------------------------------*/
+
+.top-nav-holder-768,
+.sidebar-768 {
+	display: none;
+}
+
+.sidebar-480 {
+	display: none;
+}
+
+.mobiletop {
+	display: none;
+}
+
+/*------------------------------------*\
+    Slingpic
+\*------------------------------------*/
+
+.slingpic[style] {
+	margin:5px auto !important;
+	height:auto !important;
+}
+
+.slingpic[style] img.alignleft {
+	padding: 5px 20px 20px 0px !important;
+	float:left;
+}
+
+.slingpic[style] img.alignright {
+	padding: 5px 0 20px 20px !important;
+	float:right !important;
+}
+
+.slingpic[style] img {
+/*padding: 5px 20px 20px 0px !important;
+float:left;*/
+}
+
+/*------------------------------------*\
+    Table of Contents
+\*------------------------------------*/
+
+#toc-np-container p {
+	cursor: pointer;
+}
+
+#toc-np-container  {
+	padding:10px; margin:auto;
+}
+
+#toc-np-container ul {
+	margin-top:0 !important;
+	text-align:left;
+}
+
+#toc-np-container ul li {
+   padding:5px 0;
+}
+
+#toc-np-container li.header-level-2 {
+  position:relative;
+}
+
+#toc-np-container li.header-level-2 a:before {
+  content: url('images/bullet.png');
+  position: absolute; left:5px;
+}
+
+#toc-np-container #toc-np-title {
+	font-size:24px;
+}
+
+#toc-np-container p::after {
+	content: '⇅';
+	float: right;
+	cursor: pointer;
+	color:#000;
+}
+
+.toc-leftalign {
+	float: left;
+padding-right: 20px;
+padding-bottom: 20px;
+}
+
+.toc-rightalign {
+	float: right;
+padding-left: 20px;
+padding-bottom: 20px;
+}
+
+/*------------------------------------*\
+    Standard
+\*------------------------------------*/
+
+blockquote {
+	color:#4ebead;
+}
+
+a {
+	color:#fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color:#fff;
+}
+
+.no-link-color {
+	color: #fff !important;
+	text-decoration: none !important;
+}
+
+.no-link-color:hover {
+	text-decoration: underline !important;
+}
+
+p, ul  {
+	font-size: 1vw;
+	font-style: normal;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.mobiletop {
+	display: none;
+}
+
+.clearer {
+	clear:both;
+}
+
+.centered {
+	text-align: center;
+}
+
+
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('fonts/Montserrat-Regular.otf');
+	font-weight: normal !important;
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('fonts/Montserrat-Light.otf');
+	font-weight: normal !important;
+}
+
+
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 2vw;
+	color:#5f1b1a;
+	font-weight:bolder;
+}
+.blog-text > h1 {
+    font-size: 1.5vw;
+    margin-top: 10px;
+}
+h2 {
+	font-size: 1.7vw;
+	color:#ffb900;
+	font-weight:bolder;
+}
+
+h3 {
+	font-size: 1.3vw;
+	font-weight: bolder;
+	color:#fff;
+	padding: 10px;
+	background-color: #000;
+}
+
+h4 {
+	font-size: 1.2vw;
+	color:#5f1b1a;
+	font-weight:bold;
+}
+
+h5 {
+	font-size: 1vw;
+	font-weight: normal;
+	font-weight:bold;
+}
+span{
+	color:black;
+}
+p.caption {
+    font-style: italic;
+    color: #7c7c7c;
+}
+.img-frame{
+	border: 3px solid white;
+    box-shadow: 0px 2px 7px 5px #d8d8d8;
+    max-width: 300px;
+    max-height: 300px;
+}
+a.page-numbers{
+	color:#601c1c;
+	font-size: 1.5vw;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+span.page-numbers.current{
+	font-size: 1.5vw;
+	margin-right: 5px;
+    margin-left: 5px;
+}
+.blog-img > img{
+	border: 3px solid white;
+    box-shadow: 0px 2px 7px 5px #d8d8d8;
+    max-width: 300px;
+    max-height: 300px;	
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+}
+h2.contact-title {
+    color: white;
+    text-align: center;
+    background-color: #5f1b1a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.4vw;
+    letter-spacing: 4px;
+    border-radius: 9px;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    padding-top: 5px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    border-radius: 5px;
+    padding-right: 8px;
+    margin-bottom: 13px;
+    width: 100%;
+}
+input.wpcf7-form-control.wpcf7-text {
+    padding-top: 5px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 13px;
+    width: 100%;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 13px;
+    width: 100%;
+    height: 90px;
+}
+input.wpcf7-form-control.wpcf7-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    color: #fff;
+    background-color: #5f1b1a;
+    border: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.quote-text {
+    font-size: 1.3vw;
+    font-weight: normal;
+    color:#000 !important;
+    font-family: 'Montserrat-Regular', sans-serif;
+    background-color: none !important;
+}
+.form-contact {
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 45px;
+    padding-bottom: 38px;
+    margin-left: 10px;
+}
+textarea#comment {
+    padding-left: 10px;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    padding-right: 10px;
+    width: 50%;
+    text-align: center;
+    min-height: 50px;
+}
+p.logged-in-as > a {
+    color: #601c1c;
+}
+.comment-content > p {
+    color: black;
+}
+.comment-author > img {
+    width: 40px !important;
+    height: 40px !important;
+    position: relative;
+    top: 12px;
+}
+.comment-content {
+    border: 1px solid #601c1c;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 80%;
+    border-radius: 14px;
+    margin-top: 13px;
+}
+ol.comment-list > li {
+    height: 180px;
+}
+h2.comments-title {
+    color: #601c1c;
+    margin-top:35px;
+}
+h3#reply-title {
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #d6d6d6;
+}
+input#submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    color: #fff;
+    background-color: #5f1b1a;
+    border: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 11px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+li {
+  display: list-item;
+  color: #5f1b1a; /* or whatever color you prefer */
+}
+section.page-section {
+    padding-bottom: 30px;
+}
+
+.page-content > p > a {
+    color: #5f1b1a;
+    font-size: 1.1vw;
+    text-decoration: underline;
+    padding: 10px;
+    text-decoration-color: #5f1b1a;
+}
+.page-content > p > a:hover {
+    color: #ffb900;
+    text-decoration-color: #ffb900;
+}
+.img-center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float:none;
+}
+ul.post-categories{
+	margin: 0px;
+    padding: 0px;
+    float: left;
+}
+ul.post-categories > li {
+    list-style: none;
+    float: left;
+	margin-right: 7px;
+}
+ul.post-categories > li > a{
+	color:#ffb900;
+	text-decoration: underline;
+}
+
+ul.post-categories > li > a:hover{
+	color:#5f1b1a;
+	text-decoration: underline;
+}
+a.blog-button {
+    background-color: #5f1b1a;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    text-transform: uppercase;
+}
+a.blog-button:hover {
+    color: #ffb900;
+    text-decoration: none;
+}
+.blog-container:nth-child(odd) {
+	background-color: #f4f4f4;
+	padding-top: 25px;
+	padding-bottom: 23px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 10px;
+}
+.blog-container:nth-child(even){
+	background-color: #fff;
+	padding-top: 25px;
+	padding-bottom: 23px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-bottom: 10px;
+}
+.blog-text{
+	padding-left:10px;
+	padding-right:10px;
+	float:left;
+}
+@media only screen and (max-width : 1430px) {		
+	h1 {
+		font-size: 2.5vw;
+		color:#5f1b1a;
+		font-weight:bolder;
+	}
+
+	.blog-text > h1 {
+	    font-size: 2vw;
+	    margin-top: 10px;
+	}
+	h2 {
+		font-size: 2.1vw;
+		color:#ffb900;
+		font-weight:bolder;
+	}
+	h2.contact-title {
+		font-size: 2.1vw;
+	}
+	h3 {
+		font-size: 1.8vw;
+		font-weight: bolder;
+		color:#fff;
+		padding: 10px;
+		background-color: #000;
+	}
+
+	h4 {
+		font-size: 1.5vw;
+		color:#5f1b1a;
+		font-weight:bold;
+	}
+
+	h5 {
+		font-size: 1.4vw;
+		font-weight: normal;
+		font-weight:bold;
+	}
+	.page-content > p{
+		font-size: 1.3vw !important;
+	}
+	.page-content > p > a{
+		font-size: 1.3vw !important;
+	}
+
+}
+@media only screen and (max-width : 1024px) {		
+	h1 {
+		font-size: 3.5vw;
+		color:#5f1b1a;
+		font-weight:bolder;
+	}
+	a.page-numbers{
+		color:#601c1c;
+		font-size: 2vw;
+	    margin-right: 5px;
+	    margin-left: 5px;
+	}
+	span.page-numbers.current{
+		font-size: 2vw;
+		margin-right: 5px;
+	    margin-left: 5px;
+	}
+	.blog-text > h1 {
+	    font-size: 2vw;
+	    margin-top: 10px;
+	}
+	h2 {
+		font-size: 3.1vw;
+		color:#ffb900;
+		font-weight:bolder;
+	}
+	h2.contact-title {
+	    font-size: 1.89vw;
+	}
+	input.wpcf7-form-control.wpcf7-submit{
+	    padding-left: 50px;
+	    padding-right: 50px;
+	}
+	h3 {
+		font-size: 2.8vw;
+		font-weight: bolder;
+		color:#fff;
+		padding: 10px;
+		background-color: #000;
+	}
+
+	h4 {
+		font-size: 2.5vw;
+		color:#5f1b1a;
+		font-weight:bold;
+	}
+	h5 {
+		font-size: 2.4vw;
+		font-weight: normal;
+		font-weight:bold;
+	}
+	.page-content > p{
+		font-size: 1.6vw !important;
+	}
+	.page-content > p > a{
+		font-size: 1.6vw !important;
+	}
+	.col-md-8.left.page-content {
+   		 padding-right: 15px !important;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	.col.span_9_of_12.blog-text {
+	    padding-left: 32px;
+	    padding-right: 20px;
+	}
+	.blog-container:nth-child(odd) {
+	    background-color: #f4f4f4;
+	    padding-top: 25px;
+	    padding-bottom: 23px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    margin-bottom: 10px;
+	}
+	.blog-container:nth-child(even) {
+	    background-color: #fff;
+	    padding-top: 25px;
+	    padding-bottom: 23px;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    margin-bottom: 10px;
+	}
+	a.blog-button {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	    width: 70%;
+	    text-align: center;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.container{
+		padding-left: 0px !important;
+	}
+	.page-content {
+   		 padding-left:20px;
+   		 padding-right: 20px;
+	}
+	.footer-nav ul{
+		display: none !important;
+	}
+	h1 {
+		font-size: 8vw;
+		color:#5f1b1a;
+		font-weight:bolder;
+	}
+	a.page-numbers{
+		color:#601c1c;
+		font-size: 4vw;
+	    margin-right: 5px;
+	    margin-left: 5px;
+	}
+	span.page-numbers.current{
+		font-size: 4vw;
+		margin-right: 5px;
+	    margin-left: 5px;
+	}
+	input.wpcf7-form-control.wpcf7-submit {
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	    color: #fff;
+	    background-color: #5f1b1a;
+	    border: 1px solid white;
+	    padding-top: 15px;
+	    padding-bottom: 11px;
+	    padding-left: 80px;
+	    padding-right: 80px;
+	}
+	.contact-container {
+	    margin-bottom: 40px;
+	}
+	.blog-text > h1 {
+	    font-size: 7vw;
+	    margin-top: 10px;
+	}
+	h2 {
+		font-size: 6.7vw;
+		color:#ffb900;
+		font-weight:bolder;
+	}
+	.form-contact{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	h2.contact-title {
+		font-size: 5.1vw;
+	}
+	h3 {
+		font-size: 6.3vw;
+		font-weight: bolder;
+		color:#fff;
+		padding: 10px;
+		background-color: #000;
+	}
+
+	h4 {
+		font-size: 6.2vw;
+		color:#5f1b1a;
+		font-weight:bold;
+	}
+
+	h5 {
+		font-size: 6vw;
+		font-weight: normal;
+		font-weight:bold;
+	}
+	.page-content > p{
+		font-size: 3.6vw !important;
+	}
+	.page-content > p > a{
+		font-size: 3.6vw !important;
+	}
+}
+body {
+	font-size: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	background: #fff;
+	line-height: 1.2;
+	margin:0;
+
+}
+
+
+/*ul {
+	list-style-image: url('images/bullet.png');
+}*/
+
+ul li {
+	padding: .5% 0;
+}
+
+	
+.container {
+	margin: 0 auto;
+	box-sizing:border-box;
+	overflow: hidden;
+	background: #fff;
+	border:15px solid #fff;
+	border-bottom: none;
+}
+
+.container img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*------------------------------------*\
+    Left Side
+\*------------------------------------*/
+
+.main-col-1 {
+	width: 21%;
+	
+}
+
+
+.logo {
+	padding: 10px;
+}
+
+
+
+.sidebar-1  ul, .sidebar-2 ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+
+.sidebar-1 {
+	background: #1b6e96;
+	padding:1% 4%;
+}
+
+	.sidebar-1 ul li {
+		margin-left: 0%;
+		border-bottom: 2px dashed #8db7cb;
+		margin:auto;
+		padding: 4% 0;
+
+	}
+
+	.sidebar-1 li:last-child {		
+		border-bottom: none;
+	}
+
+	.sidebar-1 li a {		
+		display: inline-block;
+		letter-spacing: 1px;
+    text-transform: uppercase;
+	}
+
+
+.sidebar-2 {
+	background: #05374f;
+	margin-top: 4%;
+	padding: 4%;
+
+}
+
+	.sidebar-2 h3 {
+		background: #1b6e96; /*secondary color*/
+		color: #fff;
+		padding: 2%;
+		margin: 0 auto 10px;
+	}
+
+	.sidebar-2 ul li {
+		margin-left: 0%;
+		border-bottom: 2px dashed #8db7cb;
+		margin:auto;
+		padding: 3% 0;
+	}
+	
+	.sidebar-2 li:last-child {		
+		border-bottom: none;
+	}
+
+	.sidebar-2 li a {		
+		display: inline-block;
+		letter-spacing: 1px;
+	}
+
+
+.sidebar-3 {
+	background: #cbcbcb;
+	margin-top: 4%;
+	padding: 3%;
+	/*padding-bottom: 44%;*/
+}
+.center-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float:none;
+  max-width: 73% !important;
+}
+.content-sidebar-4 {
+    padding-bottom: 15px;
+}
+.sidebar-4 {
+    background: #ffb900;
+    margin-top: 4%;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+  /*padding-bottom: 44%;*/
+}
+a.black-button {
+    background-color: #000;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    font-size: 1.2vw;
+    font-weight: bold;
+    border-radius: 5px;
+    padding-bottom: 7px;
+    position: relative;
+    top: 5px;
+}
+.content-sidebar-3 {
+    position: relative;
+    bottom: 10px;
+}
+	.sidebar-3 h3 {
+		background: #1b6e96; /*secondary color*/
+		color: #fff;
+		padding: 3% 2%;
+		margin: 0 auto 10px;
+	}
+	
+	.sidebar-3 ul {
+		/*list-style-image:url('images/bullet.png');*/
+		margin-left: 6%;
+	    padding: 2%;
+	    padding-top: 0;
+	    margin-top: 0;
+	    margin-bottom: 0;
+	} 
+
+	.sidebar-3 ul li {
+		margin-left: 0%;
+		margin:auto;
+		padding: 0;
+		display: list-item;
+		color: #05374f;
+	}
+
+	.sidebar-3 ul li a {
+		color: #000;
+		letter-spacing: 1px;
+		padding: 3% 0;
+		display: block;
+	}
+
+
+
+@media (max-width: 1500px) {
+	.col-6{
+		height: 466px;
+	}.col-7{
+		height: 466px;
+	}
+}
+@media (max-width: 1260px) {
+	.col-6{
+		height: 404px;
+	}.col-7{
+		height: 404px;
+	}
+}
+@media (max-width: 1080px) {
+	.col-6{
+  	  height: 329px;
+	}.col-7{
+   	  height: 329px;
+	}
+}
+@media(max-width: 768px){
+	h3.quote-text {
+    	font-size: 2.4vw !important;
+	}
+	.col-1 .content {
+	    top: 39% !important;
+	}
+	.col-2 .content {
+	    top: 14% !important;
+
+	}
+}
+.footer-contact{
+    color: #000000 !important;
+}
+@media(max-width: 480px){
+	h3.quote-text {
+    	font-size: 6vw !important;
+	}
+	a.black-button {
+	    font-size: 3.2vw;
+	}
+	.col-1 .content {
+	    top: 4% !important;
+	}
+	.col-2 .content {
+	    top: 8% !important;
+
+	}
+	.sidebar-4 {
+	    background: #ffb900;
+	    margin-top: 1%;
+	    margin-bottom: 1%;
+	    padding-left: 25px;
+	    padding-right: 25px;
+	    padding-top: 15px;
+	}
+}
+/*------------------------------------*\
+    Right Side
+\*------------------------------------*/
+
+.main-col-2 {
+	width: 79%;
+	/*border-left: 15px solid #fff;*/
+	position: relative;
+	left: .8%;
+}
+
+.top-nav-holder {
+	background: #000000;
+	overflow: hidden;
+	/*border-bottom: 15px solid #fff;*/
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	margin-bottom: 1%;
+}
+
+.top-nav ul {
+	margin:0;
+	list-style: none;
+}
+
+.top-nav ul li {
+	display: inline-block;
+	margin-left: 2%;
+}
+
+.top-nav ul li:last-child {
+	margin-right: 0%;
+}
+
+.top-nav ul li:after {
+	content: "|";
+	color: #fff;
+	margin-left: 10px;
+}
+
+.top-nav ul li:last-child:after {
+	content: none;
+}
+
+.top-nav ul li a {
+	display: inline-block;
+	padding: 5px;
+}
+
+.top-contact {
+	color: #fff;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	position: relative;
+}
+
+.top-contact p {
+	position: relative;
+	margin-left: 2%;
+	margin-top:0;
+	margin-bottom: 0;
+}
+.top-contact img {
+	float: left;
+}
+
+.top-contact strong {
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.top-contact a {
+	color: #ffb900;
+	text-decoration: underline;
+}
+
+.top-contact .icon-phone {
+	background: url('images/Custom Wine Cellars San Diego Phone.png') no-repeat;
+	background-size: contain !important;
+    width: 7%;
+    padding-bottom: 48.27%;
+    position: absolute;
+    top: 17%;
+    left: 6%;
+}
+
+
+.column-1-container,
+.column-2-container{
+/*.column-3-container */
+	/*border-bottom: 15px solid #fff;*/
+	margin-bottom: 1%;
+}
+
+
+/*------------------First Column ------------------------*/
+
+.col .content {
+	position: absolute;
+	color: #fff;
+}
+
+.col .content h3 {
+	margin:auto;
+}
+
+.col .content p {
+	/*margin:10px auto;*/
+	margin:1.2% auto;
+}
+
+.col-1 {
+	background: #7FC2C6;
+	background: url('images/Custom Wine Cellars Feature Display Row La Jolla San Diego Residential Wine Room Redwood Racks.jpg') no-repeat;
+	width: 99%;
+	max-width: 100%;
+	background-size: cover !important;
+	padding-bottom: 82.27%;
+	position: relative;
+	/*border-right: 7px solid #fff;*/
+}
+
+	.col-1 .content {
+    padding-left: 20px;
+		position: absolute;
+		top: 50%;
+		width: 95%;
+		margin:auto;
+		left: 2%;
+
+	}
+
+	.col-1 .content h3 {
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: bold;
+    font-size: 1.4vw;
+	}
+
+	.col-1 .content .button {
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: bold;
+		background: #ffb900;
+		padding: 2% 8%;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		font-size: 1.5vw;
+		display: inline-block;
+	}
+	
+	.col-1 .content .button a {
+    font-weight: bold;
+    color: #000;
+	}
+	
+	.col-1 .content .title-2 { 
+		color: #ffb900; 
+		font-size: 1.2vw;
+		text-decoration: underline;
+	}
+
+.col-2 {
+	background: url('images/Residential Wine Room Cellar Bulk Storage San Diego CA.jpg') no-repeat;
+	width: 99%;
+	max-width: 100%;
+	background-size: cover !important;
+	padding-bottom: 82.27%;
+	position: relative;
+	left: 1%;
+	/*border-left: 7px solid #fff;*/
+}
+
+	.col-2 .content {
+    padding-left: 15px;
+    position: absolute;
+    top: 56%;
+    width: 95%;
+    margin: auto;
+    left: 2%;
+	}
+
+	.col-2 .content ul {
+		/*list-style-image: url('images/bullet-orange.png');*/
+	}
+
+	.col-2 .content ul li {
+		margin-left: 0%;
+		margin:auto;
+		padding: 0;
+		display: list-item;
+		color: #ffb900;
+	}
+
+	.col-2 .content ul li span {
+		color: #fff;
+	}
+
+
+	.col-2 .content h3 {
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: bold;
+		font-size: 1.4vw;
+	}
+
+	.col-2 .content .button {
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: bold;
+		background: #ffb900;
+		padding: 2% 8%;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		font-size: 1.5vw;
+		display: inline-block;
+	}
+	
+	.col-2 .content .button a { color:#000; }
+	
+	.col-2 .content .title-2 { 
+		color: #ffb900; 
+		font-size: 1.2vw;
+		text-decoration: underline;
+	}
+
+
+
+/*------------------Second Column ------------------------*/
+
+.col-3 {
+	background:#000 url('images/Talk to a Specialist.jpg') no-repeat;
+	width: 97%;
+	max-width: 100%;
+	background-size: cover !important;
+	padding-bottom: 57.28%;
+	position: relative;
+	/*border-right: 10px solid #fff;*/
+
+}
+
+	.col-3 .content {
+		top: 10%;
+		left: 50%;
+   		transform: translate(-50%, 0);
+   		width: 100%;
+	}
+
+	/*.col-3 .content img {
+		display: block;
+		margin:auto;
+		min-height: 132px;
+	}*/
+
+	.col-3 .content .button-border {
+		border: 2px solid #ffb900;
+	    border-radius: 2px;
+	    padding: 1% 10%;
+	    text-align: center;
+	    width: 80%;
+	    margin: auto;
+	    margin-top: 30%;
+	}
+
+	.col-3 .content p {
+		color: #ffb900;
+		font-size: 1vw;
+		margin:3px 0;
+	}
+
+	.col-3 .content p.number {
+		font-size: 1.6vw;
+		font-family: 'Montserrat-Regular';
+		font-weight: bold;
+	}
+
+	.col-3 .content p a {
+		color: #ffb900;
+	}	
+
+	.icon-column-1 {
+		background: url('images/Custom Wine Cellars San Diego Professional.png') no-repeat;
+		background-size: contain !important;
+	    width: 23%;
+	    padding-bottom: 27%;
+	    position: absolute;
+	    left: 50%;
+   		transform: translate(-50%, 0);
+	}
+
+	
+
+.col-4 {
+	background:#000 url('images/Get a Fast Quote.jpg') no-repeat;
+	width: 97%;
+	max-width: 100%;
+	background-size: cover !important;
+	padding-bottom: 57.28%;
+	position: relative;
+	/*border-left: 10px solid #fff;
+	border-right: 10px solid #fff;*/
+}
+
+	.col-4 .content {
+		top: 10%;
+		left: 50%;
+   		transform: translate(-50%, 0);
+   		width: 100%;
+	}
+
+	/*.col-4 .content img {
+		display: block;
+		margin:auto;
+		min-height: 132px;
+	}*/
+
+	.col-4 .content .button-border {
+		border: 2px solid #ffb900;
+	    border-radius: 2px;
+	    padding: 1% 10%;
+	    text-align: center;
+	    width: 80%;
+	    margin: auto;
+	    margin-top: 30%;
+	}
+
+	.col-4 .content p {
+		color: #ffb900;
+		font-size: 1vw;
+		margin:3px 0;
+	}
+
+	.col-4 .content p.number {
+		font-size: 1.6vw;
+		font-family: 'Montserrat-Regular';
+		font-weight: bold;
+	}
+
+	.col-4 .content p a {
+		color: #ffb900;
+	}	
+
+	.icon-column-2 {
+		background: url('images/Best Price - Custom Wine Cellars San Diego.png') no-repeat;
+		background-size: contain !important;
+	    width: 28%;
+	    padding-bottom: 27%;
+	    position: absolute;
+	    left: 50%;
+   		transform: translate(-50%, 0);
+	}
+
+
+.col-5 {
+	background:#000 url('images/Ask a Question.png') no-repeat;
+	width: 97%;
+	max-width: 100%;
+	background-size: cover !important;
+	padding-bottom: 57.28%;
+	position: relative;
+	/*border-left: 10px solid #fff;*/
+}
+
+	.col-5 .content {
+		top: 10%;
+		left: 50%;
+   		transform: translate(-50%, 0);
+   		width: 100%;
+	}
+
+	/*.col-5 .content img {
+		display: block;
+		margin:auto;
+		min-height: 132px;
+	}*/
+
+	.col-5 .content .button-border {
+		border: 2px solid #ffb900;
+	    border-radius: 2px;
+	    padding: 1% 10%;
+	    text-align: center;
+	    width: 80%;
+	    margin: auto;
+	    margin-top: 30%;
+	}
+
+	.col-5 .content p {
+		color: #ffb900;
+		font-size: 1vw;
+		margin:3px 0;
+	}
+
+	.col-5 .content p.number {
+		font-size: 1.6vw;
+		font-family: 'Montserrat-Regular';
+		font-weight: bold;
+	}
+
+	.col-5 .content p a {
+		color: #ffb900;
+	}		
+
+	
+	.icon-column-3 {
+		background: url('images/Custom Wine Cellars San Diego Question.png') no-repeat;
+		background-size: contain !important;
+	    width: 28%;
+	    padding-bottom: 27%;
+	    position: absolute;
+	    left: 50%;
+   		transform: translate(-50%, 0);
+	}
+
+/*------------------Third Column ------------------------*/
+
+.col-6 {
+
+	width: 99%;
+	max-width: 100%;
+	background-size: cover !important;
+  padding-bottom: 61.74%;
+	/* padding-bottom: 84.64%; */
+	position: relative;
+}
+
+
+	.col-6 .content {
+    position: absolute;
+    top: 54%;
+    width: 95%;
+    margin: auto;
+    left: 2%;
+	}
+
+	.col-6 .content h3 {
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: bold;
+		font-size: 1.4vw;
+	}
+	
+	.col-6 .content .title-2 { 
+		color: #fff; 
+		font-size: 1.3vw;
+	}
+
+	.col-6 .content .title-2 span { 
+		color: #ffb900; 
+		text-decoration: underline;
+		font-family: 'Montserrat-Regular', sans-serif;
+		font-weight: bold;
+	}
+
+	.col-6 .content p {
+		font-size: .9vw;
+	}
+
+	.col-6 .content .title-3 { 
+		color: #ffb900; 
+		text-decoration: underline;
+	}
+
+
+.col-7 {
+	background: url('images/San Diego California home custom wine cellars.jpg') no-repeat;
+	width: 99%;
+	max-width: 100%;
+	background-size: cover !important;
+	/*padding-bottom: 84.64%;*/
+	/*padding-bottom: 118.64%;*/
+  padding-bottom: 86.54%;
+	position: relative;
+	left: 1%;
+	/*border-left: 15px solid #fff;*/
+}
+
+	.col-7 .content {
+		position: absolute;
+		width: 95%;
+		margin:auto;
+		left: 2%;
+
+	}
+
+	.col-7 .content-top {
+		top: 10%;	
+	}
+
+	.col-7 .content h3 {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: bold;
+    font-size: 1.1vw;
+    padding-right: 23px;
+    padding-left: 15px;
+    text-align: justify;
+	}
+
+	.col-7 .content-bottom {
+		bottom: 5%;	
+	}
+
+	.col-7 .content-bottom span {
+		color: #ffb900;
+		text-decoration: underline;
+		font-family: 'Montserrat-Regular';
+		font-weight: bold;
+	}
+	
+	.col-7 .content ul {
+		
+	}
+
+	.col-7 ul li {
+		margin-left: 0%;
+		margin:auto;
+		padding: 1% 0;
+		display: list-item;
+		color: #ffb900;
+	}
+
+	.col-7 ul li span {
+		color: #fff;
+		letter-spacing: 1px;
+	}
+
+
+/*------------------------------------*\
+    Pre Footer
+\*------------------------------------*/
+
+
+.pre-footer {
+	padding-top: .8%;
+}
+
+.col-8, .col-9, .col-10 {
+	color: #fff;
+	position: relative;
+	padding-bottom: 42%;
+}
+
+
+.col-8 .content, .col-9 .content, .col-10 .content {
+	left: 0;
+	padding:4%;
+}
+
+.col-8 .pre-footer-content, .col-9 .pre-footer-content, .col-10 .pre-footer-content {
+	/*min-height: 90px;*/
+	padding-bottom: 5%;
+}
+
+.col-10 .pre-footer-content {
+	/*min-height: 90px;*/
+	padding-bottom: 2%;
+}
+
+
+.col-8 h4, .col-9 h4, .col-10 h4 {
+	margin-top: 0;
+	font-family: 'Montserrat-Regular', sans-serif;
+	margin-left: 20%;
+	font-size: 1vw;
+}
+
+.border {
+	border-bottom: 1px solid #fff;
+}
+
+.col-8 p, .col-9 p, .col-10 p {
+	margin-top: 5% !important;
+	text-align: center;
+	font-size: .7vw;
+}
+
+
+.col-8 .call-to-action, .col-9 .call-to-action, .col-10 .call-to-action {
+	margin-top:auto !important;
+}
+
+.col-8 .link-color, .col-9 .link-color, .col-10 .link-color {
+	text-align: center;
+	color: #ffb900;
+	margin: 0;
+	font-size:1.6vw;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.col-8 img, .col-9 img, .col-10 img {
+	float: left;
+}
+
+
+.col-8 {
+	background: #5f1b1a;
+	border-right: 1px solid #b5c4cb;
+}
+
+
+	.col-8 h4 {
+		margin-left: 17%;
+	}
+
+	.icon-column-8 {
+		background: url('images/tool-icon- Custom Wine Cellars San Diego.png') no-repeat;
+		background-size: contain !important;
+	    width: 11%;
+	    padding-bottom: 13%;
+	    position: absolute;
+	    left: 5%;
+	}
+
+
+.col-9 {
+	background: #3d0807;
+}
+
+	.icon-column-9 {
+		background: url('images/bottle-icon - Custom Wine Cellars San Diego.png') no-repeat;
+		background-size: contain !important;
+	    width: 15%;
+	    padding-bottom: 13%;
+	    position: absolute;
+	    left: 5%;
+	}
+
+
+
+.col-10 {
+	border-left: 1px solid #b5c4cb;
+	background: #5f1b1a;
+}
+
+	.icon-column-10 {
+		background: url('images/Custom Wine Cellars San Diego People.png') no-repeat;
+		background-size: contain !important;
+	    width: 13%;
+	    padding-bottom: 13%;
+	    position: absolute;
+	    left: 5%;
+	}
+
+ .col-10 ul {
+	font-size: .8vw;
+	/*margin-left: 100px;
+	margin-bottom: 22px;*/
+	margin-left: 10%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+	.col-10 ul li {
+		margin-left: 0%;
+		margin:auto;
+		padding: 3% 0;
+		display: list-item;
+		color: #ffb900;
+	}
+
+	.col-7 ul li span {
+		color: #fff;
+		letter-spacing: 1px;
+	}
+
+
+
+
+/*------------------------------------*\
+    Pages
+\*------------------------------------*/
+
+.main-content {
+	padding: 1%;
+	/*margin-left: 1%;*/
+	clear:both;
+	color: #000;
+}
+
+.main-content ul,
+.main-content p {
+	color: #000;
+	
+}
+
+.main-content a {
+	color: #ffb900;
+	text-decoration: underline;
+}
+
+.main-content a:hover {
+	color: #1b6e96;
+	text-decoration: underline;
+}
+
+/*.main-content a:visited {
+	color: #05374f;
+	text-decoration: underline;
+}
+*/
+
+.main-content h1 {
+	color: #05374f;
+	font-family: 'Montserrat-Regular';
+	font-weight: bold;
+}
+	.main-content h1:first-child { margin-top: 0 !important; }
+
+.main-content h2 {
+	color: #05374f;
+	font-family: 'Montserrat-Regular';
+	font-weight: bold;
+}
+
+.main-content h3 {
+	color: #05374f;
+	font-family: 'Montserrat-Regular';
+	font-weight: bold;
+}
+
+.main-content h4 {
+	color: #05374f;
+	font-family: 'Montserrat-Regular';
+}
+
+
+.main-content h5 {
+	color: #05374f;
+	font-family: 'Montserrat-Regular';
+	font-weight: bold;
+}
+
+
+.main-content ul,
+.main-content ol{
+	color: #000;
+	margin-left: 6%;
+    padding-left: 0;
+}
+
+.main-content ul li ,
+.main-content ol li {
+	color: #05374f;
+}
+
+.main-content ul li a,
+.main-content ol li a {
+	color: #ffb900;
+}
+
+
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.footer-container {
+	background: #cbcbcb;
+	border:15px solid #fff;
+	border-top: 15px solid #fff;
+	padding:.5%;
+	border-top: 0;
+	border-bottom: 0;
+	margin-bottom:  0.8%;
+	margin-top: 0.8%;
+
+}
+
+.footer-logo img {
+	display: block;
+	margin-left: 10%;
+	max-width: 100%;
+}
+
+.footer-nav {
+	list-style: none;
+}
+	
+	.footer-nav ul {
+		text-align: center;
+		/*display: flex;
+  		align-items: center;
+  		justify-content: center;*/
+  		margin-top: 4%;
+  		padding-left: 0;
+	}
+ 
+	.footer-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	.footer-nav li:after {
+		content: "|";
+		color: #000;
+		margin-left: 15px;
+	}
+
+	.footer-nav li:last-child:after {
+		content: none;
+	}
+
+	.footer-nav li:last-child {
+		margin-right: 0;
+	}
+
+	.footer-nav  li a {
+		display: inline-block;
+		color: #000;
+	}
+
+.footer-copyright {
+	color: #000;
+	text-align: center;
+}
+
+/*------------------------------------*\
+    Blog
+\*------------------------------------*/
+
+.blogpost-main {
+margin: 30px 0 0 20px;
+}
+
+.blogpost {
+    padding: 1.5%;
+    margin-bottom: 2%;
+    clear: both;
+    overflow: hidden;
+}
+
+.blogpost:nth-child(odd) {
+	background: #f4f4f4;
+}
+
+.blogpost .link {
+    float:left;
+    margin-top: 1%;
+    border: 2px solid #ffb900;
+    padding: .8% 3%;
+    font-family: 'Montserrat-Regular', sans-serif;
+    text-decoration: none !important;
+}
+
+
+.blogpost .link:hover {
+	background: #ffb900;
+	color: #000 !important;
+}
+
+
+.blogpost h2 {
+	display: inline;
+}
+
+.blogpost h2 a {
+	color: #05374f !important;
+	text-decoration: none;
+}
+
+.blogpost img {
+    height: auto;
+    float: left !important;
+    margin-right: 16px;
+  	display: inline;
+  	/*border: 1px solid #ccc;*/
+  	box-shadow: 0 0 10px #afafaf;
+    border: 5px solid #fff;
+    width: 200px;
+    max-width: 100%;
+}
+
+.blogpost .categories {
+	margin-bottom: 0;
+}
+
+.blogpost .no-break {
+	padding-top: 25px;
+	padding-bottom:25px;
+}
+
+.blogpost:last-child {
+	border-bottom: none;
+}
+
+.blogpost-contents {
+	margin-top: 2%;
+}
+
+.blogpost .postdetails {
+	clear: both;
+	margin: 1% 0;
+	clear: none;
+	line-height: 1.4;
+}
+
+.blogpost-main .page-numbers {
+	font-size:18px;
+}
+
+.blogpost-main .current {
+	background:#8A171A;
+	color:#fff;
+	padding:3px 7px;
+}
+
+
+/*------------------------------------*\
+    Contact Form
+\*------------------------------------*/
+
+.contact-form-container {
+	background: #05374f;
+	padding:2%;
+
+}
+
+.contact-form-container h2 {
+	background: #1b6e96;
+	padding:2%;
+	width: 100%;
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin-top: 0;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+	padding:2%;
+	font-size: 16px;
+	width: 100%;
+	font-size: 1vw;
+	color: #000;
+}
+
+.contact-form-container input[type=submit] {
+	border: 2px solid #ffb900;
+	text-transform: uppercase;
+	text-align: center;
+	display: inline-block;
+	width: 60%;
+	margin: auto;
+	background: none;
+	font-family: 'Montserrat-Regular', sans-serif;
+	font-size: 1.5vw;
+	color: #fff !important;
+	border-radius: 2px;
+	color:#ffb900  !important;
+}
+
+.contact-form-container input[type=submit]:hover {
+	background: #ffb900;
+	color: #000 !important;
+}
+
+.contact-form-container p {
+	color: #fff;
+}
+
+.contact-form-container p.submit-button {
+	text-align: center;
+}
+
+
+h2.remove-margin {
+	margin-top: 10px;
+}
+
+
+/*------------------------------------*\
+    Custom Styles
+\*------------------------------------*/
+
+
+.wrap {
+	display: inline;
+	margin: auto;
+}
+
+.remove-margin {
+	margin:0;
+}
+
+
+.google-map {
+    position: relative;
+    padding-bottom: 112%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+.google-map iframe {
+	position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 1370px) {
+	.top-nav ul li,
+	.footer-nav ul li {
+	    margin-left: 1%;
+	}
+
+	.top-nav ul li:after 
+	.footer-nav ul li:after {
+    	margin-left: 5px;
+	}
+
+	.col-3 .content p.number {
+	    font-size: 1.4vw;
+	}
+}
+
+
+/*------------------------------------*\
+    1024
+\*------------------------------------*/
+
+
+
+@media screen and (max-width: 1280px) {
+	
+	.main-content p, .main-content ul {
+	    font-size: 1.2vw;
+	}
+
+	.sidebar-1 ul,
+	.sidebar-2 ul,
+	.sidebar-3 ul {
+		 /*font-size: 1.2vw;*/
+	}
+
+	.top-nav ul li {
+	    margin-left: 0%;
+	}
+	
+	.top-nav ul li:after 
+	.footer-nav ul li:after {
+    	margin-left: 3px;
+	}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.ezcol-one-half {
+		width: 100% !important;
+	}
+
+	p, ul {
+	    font-size: 1vw;
+	    font-style: normal;
+	    font-family: 'Montserrat', sans-serif;
+	}
+
+	.contact-form-container input, .contact-form-container textarea {
+		font-size: 1vw;
+		padding: 1%;
+	}
+
+}

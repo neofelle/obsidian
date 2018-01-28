@@ -1,0 +1,695 @@
+
+@media screen and ( max-width: 768px) {
+
+
+/*------------------------------------*\
+    Default Hidden
+\*------------------------------------*/
+
+.top-nav-holder {
+	display: none;
+}
+
+.logo {
+	display: none;
+}
+
+
+/*------------------------------------*\
+    Standard
+\*------------------------------------*/
+
+.mobiletop {
+	display: block;
+}
+
+
+p, ul,
+.col-1 .content .title-2 {
+	font-size: 2vw;
+}
+
+.main-col-1 {
+	display: none;
+}
+
+
+.main-col-2 {
+	width: 100%;
+	border-left: 0;
+	left: 0;
+}
+
+.container {
+	border:none;
+}
+
+.top-nav-holder-768 {
+	background: #ffb900;
+	overflow: hidden;
+	border-bottom: none;
+	display: block;
+	/*margin-bottom: 10px;*/
+	margin-bottom: 1%;
+}
+
+.call-us-container {
+	background: #000;
+	overflow: hidden;
+}
+
+.logo-768 {
+	padding:0;
+	display: block;
+}
+
+	.logo-768 img {
+		float: left;
+		border: 10px solid;
+		background-color: white;
+	}
+
+.call-us {
+	background: #000;
+}
+
+	.call-us p {
+		color: #fff;
+		margin-top: 7%;
+	}
+	.call-us span {
+		color: #ffb900;
+		font-size: 5vw;
+		font-family: 'Montserrat-Regular', sans-serif;
+	}
+
+.request {
+	color: #000;
+	font-size: 3.5vw;
+	font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.request u {
+	color: #000;
+}
+
+
+.menu-icon img {
+	float:right;
+	display: block;
+}
+
+
+/*------------------------------------*\
+    Sidebar
+\*------------------------------------*/
+
+.sidebar-768 {
+	display: block;
+}
+
+.sidebar-2 {
+	margin-top: 3%;
+}
+
+.sidebar-2 h3 {
+	font-size: 2.5vw;
+}
+
+.sidebar-3 {
+	margin-top: 0;
+}
+
+	.sidebar-3 h3 {
+		font-size: 2.5vw;
+	}
+
+/*------------------------------------*\
+    Columns
+\*------------------------------------*/
+
+.column-1-container {
+	/*border-bottom: 5px solid #fff;*/
+	margin-bottom: .8%;
+
+}
+
+.col-1-container {
+	border-right: 0;
+	width: 58.33%;
+}
+
+	.col-1 {
+		/*background: url(http://localhost/client-timbarrie/customwinecellars_template/wp-content/the…ure Display Row La Jolla San Diego Residential Wine Room Redwood Racks.jpg) no-repeat;*/
+		border-right: 0;
+		width: 100%;
+		padding-bottom: 105%;
+		margin-left: 1%;
+		/*background-size: cover !important;*/
+	}
+	
+	.col-1 .content {
+		top: 50%;
+	}
+
+	.col-1 .content h3 {
+		font-size: 3vw;
+	}
+
+	.col-1 .content .button {
+		font-size: 3vw;
+	}
+
+.col-2-container {
+	width: 58.33%;
+}
+	.col-2 {
+		/*border-top: 8px solid #fff;
+		border-left: 5px solid #fff;*/
+		margin-top: 2%;
+		margin-left: 1%;
+		padding-bottom: 61.85%;
+		left: 0;
+	}
+
+	.col-2 .content h3 {
+		font-size: 2.8vw;
+	}
+		.col-2 .content h3 br {
+			display: none;
+		}
+
+	.col-2 .content .button {
+		font-size: 2.8vw;
+	}
+
+
+	.col-3 {
+		width: 98%;
+	}
+		.col-3 .content p {
+			font-size: 1.3vw;
+		}
+		.col-3 .content p.number {
+			font-size: 2vw;
+		}
+
+	.col-4 {
+		width: 98%;
+		border-left: 0 solid #fff;
+		border-right: 0 solid #fff;
+	}
+
+	.col-5 {
+		width: 100%;
+	}
+	.col-6 {
+		left: 1%;
+		padding-bottom: 107%;
+	}	
+		.col-6 .content {
+			top:40%;
+		}
+
+		.col-6 .content h3 {
+			font-size: 3vw;
+		}
+		
+		.col-6 .content p {
+			font-size: 2vw;
+		}
+
+		.col-6 .content .title-2 {
+			font-size: 2vw;
+			margin-top: 3%;
+		}
+		
+
+.column-2-container {
+	/*border-bottom: 5px solid #fff;*/
+	margin-bottom: 0.8%;
+}
+	
+	.col-7-768 {
+		width: 100%;
+		margin-top: 0.8%;
+	}
+
+	.col-7 {
+		/*border-left: 8px solid #fff;*/
+		left: 0;
+		width: 100%;
+		padding-bottom: 90%;
+	}
+
+	.col-7 ul {
+		margin-top: 2%;
+	}
+
+	.col-7 ul li {
+		padding: 0 0;
+		font-size: 2.5vw;
+	}
+	
+	.col-7 .content-top {
+	    top: 5%;
+	}
+
+	.col-7 .content h3 {
+		font-size: 3.4vw;
+	}	
+
+	.col-7 .content p {
+		font-size: 3vw;
+	}	
+
+
+	.pre-footer .col,
+	.pre-footer .col .content {
+		width: 100%;
+	}
+
+	.col-8 .pre-footer-content, .col-9 .pre-footer-content, .col-10 .pre-footer-content {
+		padding-bottom: 0;
+	}
+
+	.col-8, .col-9, .col-10 {
+	    padding-bottom: 37%;
+	}
+
+
+	.col-8 h4, .col-9 h4, .col-10 h4 {
+		margin-top: 0;
+		font-family: 'Montserrat-Regular', sans-serif;
+		margin-left: 20%;
+		font-size: 3vw;
+	}
+
+	.col-8 p, .col-9 p, .col-10 p {
+		font-size: 2.2vw;
+	}
+
+	.col-8 .link-color, .col-9 .link-color, .col-10 .link-color {
+		font-size: 4vw;
+	}
+
+	.col-10 ul {
+	    font-size: 2.2vw;
+	}
+
+	.footer-container {
+		border: none;
+	}
+
+	.footer-container .col,
+	.footer-container .col .content {
+		width: 100%;
+	}
+
+	.footer-logo img {
+		margin:2% auto;
+	}
+
+	.footer-nav ul {
+		margin-top: 0;
+	}
+
+/*------------------------------------*\
+    Pages
+\*------------------------------------*/
+
+	.main-content {
+		padding: 2%;
+	}
+	
+	.main-content h1 {
+		font-size: 5vw !important;
+	}
+
+
+	.main-content h2 {
+		font-size: 4.5vw !important;
+	}
+	
+	.main-content h3 {
+		font-size: 3vw !important;
+	}
+	
+	.main-content h4 {
+		font-size: 2.8vw !important;
+	}
+
+	.main-content h5 {
+		font-size: 2.4vw !important;
+	}
+
+	.main-content p {
+		font-size: 2.2vw !important;
+	}
+
+	.main-content ul, 
+	.main-content ul li a {
+		font-size: 2.2vw !important;
+	}
+	
+	.ezcol-one-half {
+		width: 100% !important;
+	}
+
+	.contact-form-container {
+	    padding: 3%;
+	}
+
+	.contact-form-container input, .contact-form-container textarea {
+		font-size: 2vw;
+		padding: 1%;
+	}
+
+	.contact-form-container h2 {
+		font-size: 3.5vw !important;
+	}
+
+
+}
+/*768*/
+
+@media screen and (max-width: 480px) {
+
+	.sidebar-480 {
+		display: block;
+	}
+
+	p, ul, .col-1 .content .title-2 {
+		font-size: 4vw;
+	}
+
+	.main-content {
+		padding: 4%;
+	}
+
+	.main-content h1 {
+		font-size: 5vw !important;
+	}
+
+
+	.main-content h2 {
+		font-size: 4.5vw !important;
+	}
+	
+	.main-content h3 {
+		font-size: 3vw !important;
+	}
+
+	.main-content h4 {
+		font-size: 2.8vw !important;
+	}
+
+	.main-content h5 {
+		font-size: 2.4vw !important;
+	}
+
+	.main-content p {
+		font-size: 3vw !important;
+	}
+
+	.main-content ul, 
+	.main-content ul li a {
+		font-size: 3vw !important;
+	}
+
+
+
+
+	.logo-768 img {
+	    float: none;
+	    width: 100%;
+	    display: block;
+	    margin:auto;
+	    border: 10px solid;
+	}
+
+	.call-us p {
+	    margin-top: 5%;
+	    font-size: 4vw;
+	}
+
+	.call-us span {
+	    font-size: 9vw;
+	}
+
+	.menu-left-480 {
+		width: 80%;
+	}
+	.menu-right-480 {
+		width: 20%;
+	}
+
+	.top-nav-holder-768 {
+		margin-bottom: 0;
+	}
+	
+	.sidebar-1,
+	.sidebar-2 {
+		display: none;
+	}
+	
+	.request {
+	    margin-top: 7%;
+	}
+
+	.col-1-container {
+		width: 100%;
+	}
+
+	.col-1 {
+		margin-left: 0;
+		padding-bottom: 130%;
+	}
+		
+		.col-1 .content {
+			top: 5%;
+		}
+
+		.col-1 .content h3 {
+		    font-size: 6.4vw;
+		}
+
+		.col-1 .content h3 br {
+		  display: none;
+		}
+		
+		.col-1 .content .button {
+		    font-size: 6vw;
+		    margin-top: 30%;
+		    left: 50%;
+   			transform: translate(12%, 0);
+		}
+
+		.col-1 .content .button + p{
+			margin-top: 5%;
+			font-size: 5vw;
+		}
+		
+		.title-2 {
+			margin-top: 5% !important;
+			font-size: 6vw !important;
+		}
+
+	.col-2-container {
+		width: 100%;
+		margin-top: 0;
+	}
+
+		.col-2 {
+			margin-top: 0;
+			margin-left: 0;
+			width: 100%;
+			padding-bottom: 120%;
+		}
+
+		.col-2 .content {
+			top: 10%;
+		}
+
+		.col-2 .content h3 {
+		    font-size: 8vw;
+		}
+
+		.col-2 .content p {
+		    font-size: 4vw;
+		    margin-top: 4%;
+		}
+
+		.col-2 .content .button {
+		    font-size: 6vw;
+		    margin-top: 10%;
+		    left: 50%;
+		    transform: translate(5%, 0);
+		    width: 90%;
+		}
+	
+	
+	.sidebar-480 .sidebar-1 {
+		display: block;
+	}
+	
+	.sidebar-480 .sidebar-2 {
+		display: block;
+	}
+		
+		.sidebar-2 {
+			margin-top: 0;
+		}
+
+		.sidebar-2 h3 {
+		    font-size: 6vw;
+		}
+
+		.sidebar-3 h3 {
+		    font-size: 6vw;
+		}
+
+		.col-3, .col-4, .col-5 {
+			width: 100%;
+		}
+
+		.col-3 .content p {
+		    font-size: 4vw;
+		}
+		
+		.col-3 .content p.number, 
+		.col-4 .content p.number, 
+		.col-5 .content p.number {
+		    font-size: 6vw;
+		}
+	
+	.column-1-container,
+	.column-2-container {
+		margin-bottom: 0;
+	}	
+		.col-6 {
+		    left: 0%;
+		    padding-bottom: 150%;
+		}
+
+		.col-6 .content {
+		    top: 10%;
+		}
+
+		.col-6 .content h3 {
+		    font-size: 7vw;
+		}
+
+		.col-6 .content h3 br {
+		    display: none;
+		}
+
+		.col-6 .content p {
+		    font-size: 4vw;
+		}
+		
+		.col-6 .content p,
+		.col-6 .content p.title-2 {
+		    font-size: 5vw !important;
+		    margin-top: 10% !important;
+		}
+
+		.col-7 {
+			padding-bottom: 120%;
+		}
+
+		.col-7 .content h3 {
+		    font-size: 6vw;
+		}
+		
+		.col-7 .content ul {
+			margin-top: 10%;
+		}
+		.col-7 .content ul li {
+		    font-size: 4vw !important;
+		    margin:4% 0;
+		}
+		
+		.col-7 .content p {
+			font-size: 5vw;
+		}
+
+
+		.pre-footer {
+			margin-top: 0;
+		}
+
+		.icon-column-8 {
+			position: relative;
+		    width: 82px;
+		    height: 83px;
+		    display: block;
+		    margin: auto;
+		    left: 0;
+		}
+
+		.icon-column-9 {
+			position: relative;
+		    width: 117px;
+		    height: 72px;
+		    display: block;
+		    margin: auto;
+		    left: 0;
+		}
+
+		.icon-column-10 {
+			position: relative;
+		    width: 103px;
+		    height: 82px;
+		    display: block;
+		    margin: auto;
+		    left: 0;
+		}
+
+
+		.col-8 h4, .col-9 h4, .col-10 h4 {
+		    margin:5% auto;
+		    font-size: 4.5vw;
+		    text-align: center;
+		}
+		
+		.col-8, .col-9, .col-10 {
+		    padding-bottom: 82%;
+		}
+
+		.col-8 p, .col-9 p, .col-10 p {
+		    font-size: 4vw;
+		}
+
+		.col-8 .link-color, .col-9 .link-color, .col-10 .link-color {
+		    font-size: 7vw;
+		}
+
+		.col-10 ul {
+		    font-size: 4vw;
+		    margin-left: 0;
+		}
+
+		.col-10 br {
+			display: none;
+		}
+
+/*------------------------------------*\
+    Pages
+\*------------------------------------*/
+
+		.contact-form-container input, .contact-form-container textarea {
+		    font-size: 4vw;
+		    padding: 1%;
+		}
+
+
+
+}
+/*480*/
+
+@media screen and (max-width: 375px) {
+		.col-8, .col-9, .col-10 {
+		    padding-bottom: 90%;
+		}
+}

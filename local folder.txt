@@ -1,0 +1,5 @@
+htdocs/tim/wordpress/harvest
+
+wp-admin password
+u:sublime
+p:p@ssw0rd

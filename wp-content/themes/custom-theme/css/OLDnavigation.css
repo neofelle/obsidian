@@ -1,0 +1,87 @@
+.top-nav {
+	position: relative;
+}
+
+.top-nav ul ul {
+	display: none;
+
+}
+
+	.top-nav ul li:hover > ul {
+		display: block;
+	}
+
+
+.top-nav ul {
+	padding: 0 10px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	display: inline-table;
+	transition: all 0.5s ease;
+	margin: 1% 0;
+
+}
+	.top-nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+
+	.top-nav ul li {
+		float: left;
+
+	}
+
+		.top-nav ul li:after  {
+			content:  '|';
+			color: #fff;
+			padding-left: 0px;
+			display: inline-block;
+
+		}
+
+		.top-nav ul li:last-child:after {
+			content: none;
+
+		}
+
+		.top-nav ul li:hover {
+			text-decoration: underline;
+			color: #fff;
+		}
+			.top-nav ul li:hover a {
+				color: #fff;
+			}
+		
+		.top-nav ul li a {
+			display: inline; 
+			padding: 0px 15px;
+			color: #fff; 
+			text-decoration: none;
+			font-size: 1em;
+		}
+			
+		
+	.top-nav ul ul {
+		background: #5f6975; 
+		border-radius: 0px; padding: 0;
+		position: absolute; top: 100%;
+	}
+		.top-nav ul ul li {
+			float: none; 
+			border-top: 1px solid #6b727c;
+			border-bottom: 1px solid #575f6a; position: relative;
+		}
+			.top-nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}	
+				.top-nav ul ul li a:hover {
+					background: #4b545f;
+				}
+		
+	.top-nav ul ul ul {
+		position: absolute; left: 100%; top:0;
+	}
+
+
+
