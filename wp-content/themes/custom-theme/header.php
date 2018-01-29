@@ -143,76 +143,107 @@
 
 <!-- container -->
 <div class="section group container">
-	<div class="col span_12_of_12 nav_main">
-
-      <div class="top-nav-holder">
-      	<div class="col span_4_of_12 top-nav n1">
-			<div class="logo">
-				<a href="<?php echo get_option('home'); ?>">
-					<?php the_custom_logo(); ?>
-				</a>
-			</div>
-      	</div>
-        <div class="col span_6_of_12 top-nav n2">
-	        <ul id="menu-main-menu" class="menu">
-			 <?php foreach( $items as $item ){ ?>
-	          	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item"><a class="nav-home text-caps black" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
-	       	<?php } ?> 
-	        </ul>
-        </div> <!-- /top-nav -->
-        
-        <div class="col span_2_of_12 top-contact n3" style="padding-top: 0px;margin-top: 20px;height: 45px;border-left: 1px solid #112057;">
-          <!-- <img src="https://www.customwinecellarssandiego.com/wp-content/themes/customwinecellars_template/images/Custom Wine Cellars San Diego Phone.png" alt="Custom Wine Cellars San Diego Phone"> -->
-          <div class="icon-phone"></div>
-          <p><a class="no-link-color" href="tel:3019901165">301-990-1165</strong></a></p>
-
-        </div> <!-- /top-nav -->
-      </div> <!-- /top-nav-holder -->
-      <!-- Tablet -->
-      <div class="top-nav-holder-768">
-		<div class="call-us-container">
-		  <div class="col span_5_of_12">
-		    <div class="logo-768">
-
-			<a href="<?php echo get_option('home'); ?>">
-				<?php the_custom_logo(); ?>
-			</a>
-
-		   
-		    </div> 
-		    <!-- logo -->
-		  </div>
-		  <div class="col span_7_of_12 call-us">
-		    <p class="centered"> Call us to receive your custom quote <br/>
-		      <span> <a class="link-color" href="tel:8044675816">(804) 467-5816</a> </span></p>
-		  </div>
-		</div>
-		<!-- call-us-container -->
-		<div class="col span_10_of_12 menu-left-480">
-		    <p class="request centered"> or complete our <a class="link-color" href="<?php echo get_permalink( get_page_by_path( 'request-a-quote' ) ); ?>"><u>request a quote form</u></a></p>
-		</div>
-
-		<div class="col span_2_of_12 menu-icon menu-right-480">
-		   <a href="#" id="pull"><img src="<?php bloginfo('template_directory'); ?>/images/menu.png" alt="Menu"> </a>
-		</div>
-    
-      </div> <!-- /top-nav-holder-768 -->
-	</div>
-	<div class="col span_12_of_12 banner-1 banner-main">
-      <div style="display: flex;justify-content: center;width: 100%;">
-      	<div style="display: block;padding-left: 45px;padding-bottom: 45px;" class="banner-content">
-	      	<h2 class="header">Do you want to understand</h2>
-	      	<h2 class="header">The real value of your business?</h2>
-	      	<br/>
-	      	<h2 class="default">Is your goal to exit your business at some point?</h2>
-	      	<h3 class="default">Do you just need to understand the process and steps that will optimize your exit?</h3>
-	      	<br style="clear: both;"><br/>
-	      	<div style="width: 100%;text-align: center;">
-	      		<a class="button-white" href="#">Learn More</a>
+	<div class="col span_12_of_12 nav_main desktop-nav-1">
+	    <div class="top-nav-holder desktop-nav-1">
+	      	<div class="col span_4_of_12 top-nav n1">
+				<div class="logo">
+					<a href="<?php echo get_option('home'); ?>">
+						<?php the_custom_logo(); ?>
+					</a>
+				</div>
 	      	</div>
-      	</div>
-      </div>
+	        <div class="col span_6_of_12 top-nav n2">
+		        <ul id="menu-main-menu" class="menu">
+				 <?php foreach( $items as $item ){ ?>
+		          	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item"><a class="nav-home text-caps black" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+		       	<?php } ?> 
+		        </ul>
+	        </div> <!-- /top-nav -->
+	        <div class="col span_2_of_12 top-contact n3" style="padding-top: 0px;margin-top: 20px;height: 45px;border-left: 1px solid #112057;">
+	          <!-- <img src="https://www.customwinecellarssandiego.com/wp-content/themes/customwinecellars_template/images/Custom Wine Cellars San Diego Phone.png" alt="Custom Wine Cellars San Diego Phone"> -->
+	          <div class="icon-phone"></div>
+	          <p><a class="no-link-color" href="tel:3019901165">301-990-1165</strong></a></p>
+	        </div> <!-- /top-nav -->
+	    </div> <!-- /top-nav-holder -->
+	</div>
+
+	<div class="col span_12_of_12 nav_main tablet-nav-1">
+	    <div class="top-nav-holder desktop-nav-1">
+	      	<div class="col span_5_of_12 top-nav">
+				<div class="logo">
+					<a href="<?php echo get_option('home'); ?>">
+						<?php the_custom_logo(); ?>
+					</a>
+				</div>
+	      	</div>
+	        <div class="col span_1_of_12 top-nav n2">
+
+	        </div> <!-- /top-nav -->
+	        <div class="col span_6_of_12 top-contact n3" style="padding-top: 0px;margin-top: 20px;height: 45px;border-left: 1px solid #112057;">
+	          <!-- <img src="https://www.customwinecellarssandiego.com/wp-content/themes/customwinecellars_template/images/Custom Wine Cellars San Diego Phone.png" alt="Custom Wine Cellars San Diego Phone"> -->
+	          <div class="icon-phone"></div>
+	          <p><a class="no-link-color" href="tel:3019901165">301-990-1165</strong></a></p>
+	        </div> <!-- /top-nav -->
+	    </div> <!-- /top-nav-holder -->
+		<!-- Mobile -->
+		<div class="top-nav-holder-768">
+			<!-- call-us-container -->
+			<div class="col span_10_of_12 menu-left-480">
+				<div  style="padding-left: 25px !important;position: relative !important;top: 10px !important;">
+					<a href="<?php echo get_option('home'); ?>">
+						<?php the_custom_logo(); ?>
+					</a>
+				</div>
+			</div>
+			<div class="col span_2_of_12 menu-icon menu-right-480">
+			   <a href="#" id="pull"><img src="<?php bloginfo('template_directory'); ?>/images/menu.jpg" alt="Menu"> </a>
+			</div>
+		</div>
+
+
+
+	</div>
+   	<Br style="clear:both;"/>
+    <div class="col span_12_of_12 top-nav tablet-navigation" style="background-color: #102157;">
+        <ul id="menu-main-menu" class="menu">
+		 <?php foreach( $items as $item ){ ?>
+          	<li class="tablet-nav menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item"><a class="nav-home text-caps" style="color:white;" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+       	<?php } ?> 
+        </ul>	    	
     </div>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+	 <div class="col span_12_of_12 banner-1 banner-main">
+     	<div style="display: flex;justify-content: center;width: 100%;">
+	      	<div style="display: block;padding-left: 45px;padding-bottom: 45px;" class="banner-content">
+		      	<h2 class="header">Do you want to understand</h2>
+		      	<h2 class="header">The real value of your business?</h2>
+		      	<br/>
+		      	<h2 class="default">Is your goal to exit your business at some point?</h2>
+		      	<h3 class="default">Do you just need to understand the process and steps that will optimize your exit?</h3>
+		      	<br style="clear: both;"><br/>
+		      	<div style="width: 100%;text-align: center;">
+		      		<a class="button-white" href="#">Learn More</a>
+		      	</div>
+	      	</div>
+    	</div>
+    </div>
+
+
+
+
+
 	<!-- Left Column -->
 	<div class="col span_3_of_12 main-col-1">
 	  	<div class="sidebar-1">
@@ -246,21 +277,3 @@
 
 <!-- First Column -->
 <div class="section group column-1-container">
-  <!-- Sidebar Tablet -->
-  <div class="col span_5_of_12 sidebar-768">
-  		<div class="sidebar-1">
-		  <?php dynamic_sidebar( 'Sidebar 1' ); ?>
-		</div>
-      <!-- Sidebar 1 -->
-
-    	<div class="sidebar-2">
-			  <?php dynamic_sidebar( 'Sidebar 2' ); ?>
-		</div>
-      <!-- Sidebar 2 -->
-		<!-- Sidebar 4 -->
-		<div class="sidebar-4 tablet-s4">
-			<div class="content-sidebar-4">
-				<?php dynamic_sidebar( 'Sidebar 4' ); ?>
-			</div>
-		</div>	
-  </div>
