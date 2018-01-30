@@ -6,7 +6,7 @@ Template Name: Homepage
 <?php get_header(); ?>
     <!-- sidebar-768 -->
 
-    <div class="col span_12_of_12 col-1-container">
+    <div class="col span_12_of_12 col-1-container section-1-desktop">
       <div class="col-1">
         <div class="content">
           <div class="col span_6_of_12 left">
@@ -20,9 +20,24 @@ Template Name: Homepage
         </div>
       </div>
     </div>
+
+    <div class="col span_12_of_12 col-1-container section-1-mobile">
+      <div class="col-1">
+        <div class="content">
+          <div class="col span_12_of_12" style="text-align: center;">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-1.jpg">
+          </div>
+          <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
+            <h3 class="title" style="text-align:center;font-weight: bolder;color:white;">Struggling to delegate critical functions to your management team to grow your business?</h3>
+            <p style="text-align:center;color: white;">Worried about having enough money to continue your current lifestyle unless you are 100% hands on?</p>
+            <a href="" class="button-about">Create a unique design that is all your own - Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- col-1-container -->
     <!-- col-2-container -->
-    <div class="col span_12_of_12 col-2-container">
+    <div class="col span_12_of_12 col-2-container section-1-desktop">
       <div class="col-1">
         <div class="content">
           <div class="col span_5_of_12 left" style="text-align: left;">
@@ -36,9 +51,24 @@ Template Name: Homepage
         </div>
       </div>
     </div>
+
+    <div class="col span_12_of_12 col-1-container section-1-mobile" style="background-color: white !important;">
+      <div class="col-1">
+        <div class="content">
+          <div class="col span_12_of_12" style="text-align: center;">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-2.jpg">
+          </div>
+          <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
+            <h3 class="title" style="text-align:center;font-weight: bolder;color:black;">Do you want to provide financial security for yourself and your family?</h3>
+            <p class="" style="text-align:center;color: black;">Learn how to structure your business to grow without you at the helm</p>
+            <a href="" class="button-about-2">Get Help Today</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- col-2-container -->
     <!-- col-3-container -->
-    <div class="col span_12_of_12 col-1-container">
+    <div class="col span_12_of_12 col-1-container section-1-desktop">
       <div class="col-1">
         <div class="content">
           <div class="col span_6_of_12 left">
@@ -52,9 +82,24 @@ Template Name: Homepage
         </div>
       </div>
     </div>
+
+    <div class="col span_12_of_12 col-1-container section-1-mobile">
+      <div class="col-1">
+        <div class="content">
+          <div class="col span_12_of_12" style="text-align: center;">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3.jpg">
+          </div>
+          <div class="col span_6_of_12 left" style="text-align: center;padding-right: 10px;padding-left: 10px;">
+            <h3 class="title" style="text-align:center;font-weight: bolder;color:white;">Are you running a small business, working too hard, and feel you are in a rut?</h3>
+            <p class="" style="text-align:center;color: white;">Need an exit plan that will include protecting your family and business? <br/><br/>Take the anxiety out of the process.</p>
+            <a href="" class="button-about">Schedule an introductory meeting</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- col-3-container -->
     <!-- col-4-container -->
-    <div class="col span_12_of_12 col-2-container">
+    <div class="col span_12_of_12 col-2-container  section-1-desktop">
       <div class="col-1">
         <div class="content">
           <div class="col span_5_of_12 left" style="text-align: left;">
@@ -68,30 +113,22 @@ Template Name: Homepage
         </div>
       </div>
     </div>
-    <!-- col-4-container -->
-    <!-- Sidebar Phone -->
-    <div class="col span_12_of_12 sidebar-480">
-      <div class="sidebar-2">
-            <div id="nav_menu-5" class="widget_nav_menu">
-                <?php dynamic_sidebar( 'mobile 1' ); ?>
-            </div>     
-    </div>
-        <!-- Sidebar 1 -->
-    </div>
-  <!-- column-1-container -->
 
-
-  <!-- Sidebar Phone -->
-    <div class="col span_12_of_12 sidebar-480">
-      <div class="sidebar-2">
-            <div id="nav_menu-6" class="widget_nav_menu">
-              <?php dynamic_sidebar( 'mobile 2' ); ?>
-            </div>     
+    <div class="col span_12_of_12 col-1-container section-1-mobile" style="background-color: white !important;">
+      <div class="col-1">
+        <div class="content">
+          <div class="col span_12_of_12" style="text-align: center;">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-4.jpg">
+          </div>
+          <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
+            <h3 class="title" style="text-align:center;font-weight: bolder;color:black;">Need a plan and a process of structuring your business to secure your future?</h3>
+            <p class="" style="text-align:center;color: black;">Take the anxiety and uncertainty out of your future with one simple, no-cost introductory meetingm you can take the first step</p>
+            <a href="" class="button-about-2">Get small business specialist help today</a>
+          </div>
+        </div>
       </div>
-        <!-- Sidebar 1 -->
     </div>
-    <!-- sidebar-480 -->
-  <!-- column-3-container -->
+  <!-- column-4-container -->
   </div>  <!-- main col-2  -->
 </div>  <!-- /container -->
 <div class="col span_12_of_12" style="background-color: #102157;">

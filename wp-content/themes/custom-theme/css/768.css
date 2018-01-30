@@ -50,7 +50,7 @@ p, ul,
 	border-bottom: none;
 	display: block;
 	/*margin-bottom: 10px;*/
-	margin-bottom: 1%;
+	margin-bottom: 0px;
 }
 
 .call-us-container {
@@ -372,7 +372,12 @@ p, ul,
 
 }
 /*768*/
-
+@media screen and (max-width: 768px) {
+	.col-1-container {
+	    width: 100%;
+	    height: auto;
+	}
+}
 @media screen and (max-width: 480px) {
 
 	.sidebar-480 {
@@ -446,11 +451,6 @@ p, ul,
 
 	.top-nav-holder-768 {
 		margin-bottom: 0;
-	}
-	
-	.sidebar-1,
-	.sidebar-2 {
-		display: none;
 	}
 	
 	.request {

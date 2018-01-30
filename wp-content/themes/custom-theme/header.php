@@ -108,6 +108,7 @@
 	    /*Icons*/     
 	    
 	    .top-contact .icon-phone { background:url("<?php bloginfo('template_directory'); ?>/images/home/phone.png") no-repeat; }
+	    .icon-phone-white { background:url("<?php bloginfo('template_directory'); ?>/images/home/phone-white.jpg") no-repeat; }
 	    .icon-column-1 { background:url("<?php bloginfo('template_directory'); ?>/images/icon-1.png") no-repeat; }
 	    .icon-column-2 { background:url("<?php bloginfo('template_directory'); ?>/images/icon-2.png") no-repeat; }
 	    .icon-column-3 { background:url("<?php bloginfo('template_directory'); ?>/images/icon-3.png") no-repeat; }
@@ -188,14 +189,14 @@
 		<!-- Mobile -->
 		<div class="top-nav-holder-768">
 			<!-- call-us-container -->
-			<div class="col span_10_of_12 menu-left-480">
+			<div class="col span_8_of_12 menu-left-480">
 				<div  style="padding-left: 25px !important;position: relative !important;top: 10px !important;">
 					<a href="<?php echo get_option('home'); ?>">
 						<?php the_custom_logo(); ?>
 					</a>
 				</div>
 			</div>
-			<div class="col span_2_of_12 menu-icon menu-right-480">
+			<div class="col span_4_of_12 menu-icon menu-right-480">
 			   <a href="#" id="pull"><img src="<?php bloginfo('template_directory'); ?>/images/menu.jpg" alt="Menu"> </a>
 			</div>
 		</div>
@@ -218,13 +219,16 @@
 
 
 
+    <div class="span_12_of_12 top-contact contact-mobile" style="background-color: #102157;padding-top: 13px;padding-bottom: 13px;text-align: center;">
+          <div class="icon-phone-white" style="height: 35px;width: 46px;"></div>
+          <p><a class="no-link-color" href="tel:3019901165" style="color:white !important;font-size: 7vw;position: relative;top: 2px;">301-990-1165</strong></a></p>
+    </div>
 
 
 
 
 
-
-	 <div class="col span_12_of_12 banner-1 banner-main">
+	 <div class="col span_12_of_12 banner-1 banner-main section-banner banner-desktop">
      	<div style="display: flex;justify-content: center;width: 100%;">
 	      	<div style="display: block;padding-left: 45px;padding-bottom: 45px;" class="banner-content">
 		      	<h2 class="header">Do you want to understand</h2>
@@ -240,10 +244,44 @@
     	</div>
     </div>
 
+	 <div class="col span_12_of_12 banner-1 banner-main section-banner banner-mobile">
+     	<div style="padding-left:20px;padding-right:20px;display: block;justify-content: center;width: 100%;">
+	      	<div class="banner-content">
+		      	<h2 class="header">Do you want to understand The real value of your business?</h2>
+		      	<h2 class="default">Is your goal to exit your business at some point?</h2>
+		      	<h3 class="default">Do you just need to understand the process and steps that will optimize your exit?</h3>
+		      	<br style="clear: both;">
+		      	<div style="width: 100%;text-align: center;">
+		      		<a class="button-white" href="#">Learn More</a>
+		      	</div>
+		      	<br style="clear: both;" />
+	      	</div>
+    	</div>
+    </div>
 
-
-
-
+	<div class="col span_12_of_12 video-mobile">
+		<div class="sidebar-1">
+		  	<img style="width: 100%;max-height: 280px;" src="<?php echo get_template_directory_uri() . "/images/home/video.jpg"; ?>">
+		</div>
+	</div>
+	<?php 
+    	$v = 0;
+    	$menuargs = array(
+    		"theme_location" => "primary",
+    		"menu_class" => "s-menu",
+    		"menu_id" => "NAV-LEFT",
+    	);
+    	$items_left_mobile = wp_get_nav_menu_items( 'NAV-LEFT', $menuargs); 
+    ?>  
+	<div class="col span_12_of_12 sidebar-mobile">
+  		<div class="sidebar-1">
+		  <ul id="menu-sidebar-1" class="menu">
+		    <?php foreach( $items_left_mobile as $item ){ ?>
+		      	<li id="menu-item" class="menu-item menu-item-type-custom menu-item-object-custom menu-item"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+		    <?php } ?>
+		  </ul>
+		</div>
+	</div>
 	<!-- Left Column -->
 	<div class="col span_3_of_12 main-col-1">
 	  	<div class="sidebar-1">
