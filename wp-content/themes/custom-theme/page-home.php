@@ -89,7 +89,7 @@ Template Name: Homepage
           <div class="col span_12_of_12" style="text-align: center;">
             <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3.jpg">
           </div>
-          <div class="col span_6_of_12 left" style="text-align: center;padding-right: 10px;padding-left: 10px;">
+          <div class="col span_12_of_12 left" style="text-align: center;padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:white;">Are you running a small business, working too hard, and feel you are in a rut?</h3>
             <p class="" style="text-align:center;color: white;">Need an exit plan that will include protecting your family and business? <br/><br/>Take the anxiety out of the process.</p>
             <a href="" class="button-about">Schedule an introductory meeting</a>
