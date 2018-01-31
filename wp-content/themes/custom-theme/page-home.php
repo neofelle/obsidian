@@ -131,7 +131,7 @@ Template Name: Homepage
   <!-- column-4-container -->
   </div>  <!-- main col-2  -->
 </div>  <!-- /container -->
-<div class="col span_12_of_12" style="background-color: #102157;">
+<div class="col span_12_of_12" style="background-color: #102157;padding-bottom: 30px;">
       <div class="col span_12_of_12 left icon-container" style="text-align: center;">
           <h1 class="succession-title">Succession Planning for :</h1>
       </div>
@@ -196,13 +196,13 @@ Template Name: Homepage
     </ul>
   </div>
 </div>
-<div class="col span_12_of_12 section-5-mobile" style="background-color: #986d2f;">
+<div class="col span_12_of_12 section-5-mobile" style="background-color: #986d2f;padding-right: 20px;">
   <div class="col span_12_of_12">
     <div class="business-container" style="text-align: center;">
-      <h1 style="color:white;text-transform: uppercase;font-size: 3vw;">if you do not plan for your <br/>exit from your business</h1>
+      <h1 class="business-header">if you do not plan for your <br/>exit from your business</h1>
     </div>
     <div style="display: flex;justify-content: center;">
-      <ul style="list-style: none;padding-top: 0px;padding-bottom: 5px;position: relative;bottom: 15px;left: 35px;">
+      <ul style="list-style: none;padding-top: 0px;padding-bottom: 5px;position: relative;bottom: 15px;left: 0px;">
         <li>
           <label class="container-checkbox">You are unlikely to have long-term security or a great retirement
             <input type="checkbox" checked="checked">
@@ -329,7 +329,7 @@ Template Name: Homepage
 <div class="col span_12_of_12 section-6-mobile">
   <div class="col span_12_of_12  bg-left" style="background-color: white;display: flex;justify-content: center;">
     <div class="business-container-2">
-      <h1 style="color:#102157;text-align: center;">At Obsidian Planning Solutions We:</h1>
+      <h1 style="color:#102157;text-align: center;" class="section-6-header">At Obsidian Planning Solutions We:</h1>
       <ul style="list-style: none;padding-top: 20px;padding-bottom: 5px;">
         <li>
           <label class="container-checkbox" style="color:black !important;">Help you enjoy life to the fullest now and after you exit your business
@@ -405,15 +405,15 @@ Template Name: Homepage
       <span class="txt-big">301-990-1165</span>
       <br/><br/>
       <div style="width: 60%;margin:0 auto;">
-        <div class="col span_6_of_12 left">
+        <div class="col span_6_of_12 left mobile-button-container">
           <a href="" class="button-contact">REVIEW US</a>
         </div>
-        <div class="col span_6_of_12 left">
+        <div class="col span_6_of_12 left mobile-button-container">
           <a href="" class="button-contact">CONTACT US</a>
         </div>
       </div>
       <br/>
-      <div style="width: 50%; margin: 0 auto;padding-top: 30px;margin-top: 10px;position: relative;top:20px;left: 30px;">
+      <div class="mobile-adv" style="width: 50%; margin: 0 auto;padding-top: 30px;margin-top: 10px;position: relative;top:20px;left: 30px;">
         <img class="footer-mobile-img" src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png"><br/>
       </div>
     </div>

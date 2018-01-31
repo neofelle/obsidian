@@ -531,7 +531,9 @@ a.black-button {
 		display: block;
 	}
 
-
+.business-header{
+	color:white;text-transform: uppercase;font-size: 3vw;
+}
 .desktop-specialist{
 	display: block;
 }
@@ -639,7 +641,7 @@ a.black-button {
 	    padding-right: 6vw;
 	}
 	.succession-title{
-		font-size: 2.5vw;
+		font-size: 4.5vw;
 	}
 	.button-about{
 		padding-top: 9px;
@@ -687,11 +689,32 @@ a.black-button {
 	}
 }
 @media(max-width: 768px){
+	.business-header {
+  		font-size: 4.5vw;
+	}
+
+	.section-6-header{
+		font-size: 4.5vw !important;
+	}
+	.bg-left{
+		background: none !important;
+	}
+	.business-container-2 {
+	    margin: 0 auto !important;
+	    width: 100% !important;
+	    padding-left: 0px !important;
+	    padding-right: 20px !important;
+	    padding-top: 20px !important;
+	    padding-bottom: 20px !important;
+	}
 	.img-about {
 	    height: 100%;
 	    width: 100%;
 	    margin: 0 auto;
 	}
+	label.container-checkbox {
+    	font-size: 3.7vw !important;
+    }
 	h3.quote-text {
     	font-size: 2.4vw !important;
 	}
@@ -711,15 +734,40 @@ a.black-button {
 	.sidebar-mobile{
 		display: block;
 	}
-	.sp2{
-		width: 50%;
-		display: block;
+	.sp2 {
+	    width: 50%;
+	    display: block;
+	    height: 200px;
+	}
+	.icon-about {
+	    max-width: 120px !important;
+	    max-height: 120px !important;
+	    margin: 0 auto;
+	    width: 9vw;
 	}
 	.section-1-desktop{
 		display: none;
 	}
 	.section-1-mobile{
 		display: block;
+	}
+	.mobile-button-container{
+		width: 100% !important;
+		margin-bottom: 20px !important;
+	}
+	span.txt-small {
+	    font-size: 4.2vw;
+	}
+	span.txt-big {
+    	font-size: 4.5vw;
+	}
+	img.footer-mobile-img {
+	    text-align: center;
+	    width: 38vw;
+	    display: flex;
+	    justify-content: center;
+	    margin: 0 auto;
+	    padding-bottom: 8px;
 	}
 	.button-about-2 {
 	    background-color: #704618;
@@ -788,7 +836,26 @@ a.black-button {
     	max-width: auto !important;
 	}
 }
-
+@media(max-width: 500px){
+	.succession-title{
+		font-size: 8.5vw;
+	}
+	.sp2 {
+	    width: 100%;
+	    display: block;
+	    height: 200px;
+	}
+	.icon-about {
+		max-width: 150px !important;
+	    max-height: 150px !important;
+	    margin: 0 auto;
+	    width: 24vw;
+	    margin-bottom: 15px;
+	}
+	.icon-container > h3{
+		font-size: 20px !important;
+	}
+}
 /*------------------------------------*\
     Right Side
 \*------------------------------------*/
@@ -1966,5 +2033,28 @@ h2.remove-margin {
 	    position: relative;
 	    top: 10px;
 	    left: 10px;
+	}
+}
+@media(max-width: 500px){
+	.button-contact{
+		font-size: 5vw !important;
+	}
+	span.txt-small {
+    	font-size: 5.2vw !important;
+	}
+	span.txt-big {
+	    font-size: 6.5vw !important;
+	}
+	img.footer-mobile-img {
+	    text-align: center;
+	    width: 58vw;
+	    display: flex;
+	    justify-content: center;
+	    margin: 0 auto;
+	    padding-bottom: 8px;
+	}
+	.mobile-adv{
+		position: relative;
+		left:0px !important;
 	}
 }
