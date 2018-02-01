@@ -6,15 +6,15 @@ Template Name: Homepage
 <?php get_header('pages'); ?>
  <br class="clear" /><br/> 
 <section class="page-section">
-    <div class="container-pages">
-        <div class="col-md-8 left page-content">
+    <div class="container-pages" style="width: 100%;">
+        <div class="col-md-12 page-content" style="width: 70%;padding-right: 10px;padding-left: 10px;margin: 0 auto;display: block;">
 			<h1 class="uppercase page-title"><?php the_title();?></h1>
 			 <?php $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1; 			 		
 			 	   $wpb_all_query = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'order'=>'DESC', 'posts_per_page'=>4, 'paged' => $paged)); ?>
 		    	<?php if ( $wpb_all_query->have_posts() ) : ?>
     				<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 
-						<div class="col span_12_of_12 blog-container">  
+						<div class="col span_12_of_12 blog-container" style="margin-bottom: 65px;">  
 							<div class="col span_3_of_12 blog-img">
 							<?php if(has_post_thumbnail()){ ?>
 								<?php the_post_thumbnail(); ?>
@@ -25,9 +25,8 @@ Template Name: Homepage
 							<div class="col span_9_of_12 blog-text">
 								<h1><?php the_title(); ?></h1>
 								<p><?php echo get_post_meta( get_the_ID(), 'short_desc', true); ?></p>
-								<p style="float:left;margin-top: 1px;margin-right: 10px;">Category: <?php the_category(); ?></p>
-								<br style="clear: both;" /><br/>
-								<a href="<?php the_permalink(); ?>" class="blog-button">Read More</a>
+								<br style="clear: both;" />
+								<a href="<?php the_permalink(); ?>" class="button-read">Read More</a>
 							</div>
 						</div>
 

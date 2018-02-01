@@ -1,8 +1,8 @@
 <?php get_header('pages'); ?>
 <br class="clear" /><br/> 
 <section class="page-section">
-    <div class="container-pages">
-        <div class="col-md-8 left page-content" style="width: 100%;">
+    <div class="container-pages" style="width: 100% !important;">
+        <div class="col-md-12 page-content" style="width: 50%;padding-right: 10px;padding-left: 10px;margin: 0 auto;display: block;">
             <h1 class="uppercase page-title"><?php the_title();?></h1>
             <?php
                 while ( have_posts() ) : the_post();

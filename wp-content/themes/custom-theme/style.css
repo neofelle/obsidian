@@ -187,7 +187,7 @@ h1, h2, h3 {
 h1 {
 	font-size: 2vw;
 	font-weight: normal;
-	color:#5f1b1a;
+	color:#102257;
 	font-weight:bolder;
 }
 
@@ -2057,4 +2057,30 @@ h2.remove-margin {
 		position: relative;
 		left:0px !important;
 	}
+}
+
+
+img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 300px;
+    height: 230px;
+    margin-top: 30px;
+}
+.button-read{
+    text-transform: uppercase;
+    color: white;
+    font-size: 1vw;
+    text-align: center;
+    float:left;
+    display: block;
+    width: 200px;
+    background-color: #102157;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+.button-read:hover{
+	color: yellow;
 }
