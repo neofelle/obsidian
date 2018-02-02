@@ -25,7 +25,7 @@
 	<link rel='stylesheet' id='contact-form-7-css'  href='<?php bloginfo('template_directory'); ?>/includes/css/styles.css' media='all' />
 	<link rel='stylesheet' id='extended_toc-css'  href='<?php bloginfo('template_directory'); ?>/includes/css/extended-tables/styles.css' media='all' />
 	<link rel='stylesheet' id='side-sidebar-css'  href='<?php bloginfo('template_directory'); ?>/includes/css/sidebar.css' media='all' />
-	<link rel='stylesheet' id='main style-css'  href='<?php bloginfo('template_directory'); ?>/style-pages.css' media='all' />
+	<link rel='stylesheet' id='main style-css'  href='<?php bloginfo('template_directory'); ?>/style-blogs.css' media='all' />
 
 
 	<link rel='stylesheet' id='my_custom_css-css'  href='<?php bloginfo('template_directory'); ?>/css/768.css' media='all' />
