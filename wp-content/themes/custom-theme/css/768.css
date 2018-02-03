@@ -566,6 +566,7 @@ p, ul,
 	.column-1-container,
 	.column-2-container {
 		margin-bottom: 0;
+		padding-bottom: 80px;
 	}	
 		.col-6 {
 		    left: 0%;

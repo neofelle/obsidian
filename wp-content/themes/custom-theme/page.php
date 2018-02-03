@@ -51,7 +51,7 @@
     <br class="clear" /><br/> 
     <section class="page-section">
         <div class="container-pages" style="width: 100%;">
-            <div class="col-md-12 page-content" style="width: 100%;padding-right: 40px;padding-left: 30px;margin: 0 auto;display: block;">
+            <div class="col-md-12 page-content">
                 <div class="col-md-12 page-obsidian" style="width: 100%;padding-right: 10px;padding-left: 10px;margin: 0 auto;display: block;">
                     <?php
                         while ( have_posts() ) : the_post();
