@@ -95,7 +95,7 @@
 	    /*Column Background*/
 	     .bg-right { background:url("<?php bloginfo('template_directory'); ?>/images/home/bg-logo-brown.png") no-repeat;background-position: right 10px top;background-position-y: 8px; }
 	   	 .bg-left { background:url("<?php bloginfo('template_directory'); ?>/images/home/bg-logo-brown-left.png") no-repeat;background-position: left -40px top;background-position-y: 8px; }
-	   	 .bg-contact { background:url("<?php bloginfo('template_directory'); ?>/images/home/footer-bg.png") no-repeat;background-size: cover;padding-bottom: 40px; }
+	   	 .bg-contact { background:url("<?php bloginfo('template_directory'); ?>/images/home/footer-bg-rev.jpg") no-repeat;background-size: cover;padding-bottom: 40px; }
 	     .col-2 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-2.jpg") no-repeat; }
 	     .col-3 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-3.png") no-repeat; }
 	     .col-4 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-4.png") no-repeat; }
@@ -103,7 +103,7 @@
 	     .col-6 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-6.png") no-repeat; }
 	     .col-7 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-7.png") no-repeat; }
 
-	     .banner-1 { background:url("<?php bloginfo('template_directory'); ?>/images/home/banner-1.jpg") no-repeat;background-size: 105%; }
+	     .banner-1 { background:url("<?php bloginfo('template_directory'); ?>/images/home/banner-1-rev.jpg") no-repeat;background-size: 105%; }
 	     .banner-pages { background:url("<?php bloginfo('template_directory'); ?>/images/pages/obsidian-banner.jpg") no-repeat;background-size: 105%; }
 	     .banner-pages-mobile { background:url("<?php bloginfo('template_directory'); ?>/images/pages/obsidian-banner.jpg") no-repeat;background-size: 240%; }
 	    /*Icons*/     
