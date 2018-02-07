@@ -77,7 +77,7 @@ Template Name: Homepage
             <a href="" class="button-about">Schedule an introductory meeting</a>
           </div>
           <div class="col span_6_of_12 left" style="text-align: right;padding-right: 40px;">
-            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3-rev.jpg">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3-rev2.jpg">
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ Template Name: Homepage
       <div class="col-1">
         <div class="content">
           <div class="col span_12_of_12" style="text-align: center;">
-            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3-rev.jpg">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3-rev2.jpg">
           </div>
           <div class="col span_12_of_12 left" style="text-align: center;padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:white;">Are you running a small business, working too hard, and feel you are in a rut?</h3>
@@ -103,7 +103,7 @@ Template Name: Homepage
       <div class="col-1">
         <div class="content">
           <div class="col span_5_of_12 left" style="text-align: left;">
-            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-4-rev.jpg">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-4-rev2.jpg">
           </div>
           <div class="col span_7_of_12 container-about-2 left" style="padding-right: 40px;padding-top: 25px;padding-bottom: 20px;">
             <h3 class="title justify" style="font-weight: bolder;color:black;">Need a plan and a process of structuring your business to secure your future?</h3>
@@ -118,7 +118,7 @@ Template Name: Homepage
       <div class="col-1">
         <div class="content">
           <div class="col span_12_of_12" style="text-align: center;">
-            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-4-rev.jpg">
+            <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-4-rev2.jpg">
           </div>
           <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:black;">Need a plan and a process of structuring your business to secure your future?</h3>

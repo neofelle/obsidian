@@ -94,7 +94,8 @@
 
 	    /*Column Background*/
 	     .bg-right { background:url("<?php bloginfo('template_directory'); ?>/images/home/bg-logo-brown.png") no-repeat;background-position: right 10px top;background-position-y: 8px; }
-	   	 .bg-left { background:url("<?php bloginfo('template_directory'); ?>/images/home/bg-logo-brown-left.png") no-repeat;background-position: left -40px top;background-position-y: 8px; }
+	   	 .bg-left { background:url("<?php bloginfo('template_directory'); ?>/images/home/bg-logo-brown-left.png") no-repeat;background-position: left -40px top;background-position-y: 10px; }
+	   	 .bg-inner { background:url("<?php bloginfo('template_directory'); ?>/images/home/inner-page-bg.jpg") no-repeat; }
 	   	 .bg-contact { background:url("<?php bloginfo('template_directory'); ?>/images/home/footer-bg-rev.jpg") no-repeat;background-size: cover;padding-bottom: 40px; }
 	     .col-2 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-2.jpg") no-repeat; }
 	     .col-3 { background:url("<?php bloginfo('template_directory'); ?>/images/tile-3.png") no-repeat; }
