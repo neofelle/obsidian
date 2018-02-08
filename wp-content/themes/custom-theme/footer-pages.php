@@ -1,13 +1,13 @@
 
-<div class="col span_12_of_12 section-6-desktop" style="border-top:1px solid #cfcfcf;">
-  <div class="col span_7_of_12 bg-inner" style="background-color: white;background-size: cover;background-position-y: -19px;">
-    <div class="bg-left" style="height: 518px;">
+<div class="col span_12_of_12 section-6-desktop" style="border-top:1px solid #cfcfcf;height: 520px;">
+  <div class="col span_7_of_12 bg-inner" style="background-color: white;background-size: cover;background-position-y: -19px;background-repeat:no-repeat;background-position: center center; ">
+    <div class="bg-left" style="height: 520px;">
       <div class="business-container-2">
 
       </div>
     </div>
   </div>
-  <div class="col span_5_of_12 bg-contact" style="">
+  <div class="col span_5_of_12 bg-contact" style="height: 520px;">
     <div class="contact-container">
       <div style="width: 50%; margin: 0 auto;padding-top: 30px;">
         <img src="<?php bloginfo('template_directory'); ?>/images/home/obsidian-white.png" style="width:100%;"><br/>
