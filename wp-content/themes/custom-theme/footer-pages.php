@@ -1,7 +1,7 @@
 
 <div class="col span_12_of_12 section-6-desktop" style="border-top:1px solid #cfcfcf;height: 520px;">
   <div class="col span_7_of_12 bg-inner" style="background-color: white;background-size: cover;background-position-y: -19px;background-repeat:no-repeat;background-position: center center; ">
-    <div class="bg-left" style="height: 520px;">
+    <div class="" style="height: 520px;">
       <div class="business-container-2">
 
       </div>
