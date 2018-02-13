@@ -23,7 +23,7 @@ Template Name: Homepage
 	<!-- Left Column -->
 	<div class="col span_3_of_12 main-col-1">
 	  	<div class="sidebar-1">
-	  		<img class="video-cover" src="<?php echo get_template_directory_uri() . "/images/home/video.jpg"; ?>">
+	  		 <iframe class="youtube-cover" src="https://www.youtube.com/embed/4yfBZqvgxC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 		<!-- logo -->
  		<?php 
@@ -71,10 +71,10 @@ Template Name: Homepage
 								<?php } ?>
 								</div>
 								<div class="col span_9_of_12 blog-text">
-									<h1><?php the_title(); ?></h1>
-									<p><?php echo get_post_meta( get_the_ID(), 'short_desc', true); ?></p>
+									<h1 class="title-blog"><?php the_title(); ?></h1>
+									<p class="content-blog"><?php echo get_post_meta( get_the_ID(), 'short_desc', true); ?></p>
 									<br style="clear: both;" />
-									<a href="<?php the_permalink(); ?>" class="button-read">Read More</a>
+									<a href="<?php the_permalink(); ?>" class="button-blog">Read More</a>
 								</div>
 							</div>
 
@@ -104,7 +104,7 @@ Template Name: Homepage
 	 </div></div>
 	<div class="col span_12_of_12 video-mobile">
 		<div class="sidebar-1">
-		  	<img style="width: 100%;max-height: 280px;" src="<?php echo get_template_directory_uri() . "/images/home/video.jpg"; ?>">
+			 <iframe style="width: 100%;height: 350px;background-color: black;" src="https://www.youtube.com/embed/4yfBZqvgxC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 	</div>
 	<?php 

@@ -18,7 +18,7 @@
     <!-- Left Column -->
     <div class="col span_3_of_12 main-col-1">
         <div class="sidebar-1">
-            <img class="video-cover" src="<?php echo get_template_directory_uri() . "/images/home/video.jpg"; ?>">
+            <iframe class="youtube-cover" src="https://www.youtube.com/embed/4yfBZqvgxC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
         <!-- logo -->
         <?php 
@@ -74,7 +74,7 @@
      </div></div>
     <div class="col span_12_of_12 video-mobile">
         <div class="sidebar-1">
-            <img style="width: 100%;max-height: 280px;" src="<?php echo get_template_directory_uri() . "/images/home/video.jpg"; ?>">
+             <iframe style="width: 100%;height: 350px;background-color: black;" src="https://www.youtube.com/embed/4yfBZqvgxC4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
     </div>
     <?php 

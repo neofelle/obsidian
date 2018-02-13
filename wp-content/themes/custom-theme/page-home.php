@@ -107,7 +107,7 @@ Template Name: Homepage
           </div>
           <div class="col span_7_of_12 container-about-2 left" style="padding-right: 40px;padding-top: 25px;padding-bottom: 20px;">
             <h3 class="title justify" style="font-weight: bolder;color:black;">Need a plan and a process of structuring your business to secure your future?</h3>
-            <p class="justify" style="color: black;">Take the anxiety and uncertainty out of your future with one simple, no-cost introductory meetingm you can take the first step</p>
+            <p class="justify" style="color: black;">Take the anxiety and uncertainty out of your future with one simple, no-cost introductory meeting you can take the first step</p>
             <a href="" class="button-about-2">Get small business specialist help today</a>
           </div>
         </div>
