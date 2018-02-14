@@ -236,7 +236,7 @@ Template Name: Homepage
 <div class="col span_12_of_12 section-6-desktop">
   <div class="col span_7_of_12  bg-left" style="background-color: white;">
     <div class="business-container-2">
-      <h1 style="color:#102157;text-align: left;">At Obsidian Planning Solutions We:</h1>
+      <h1 style="color:#102157;text-align: left;">At Obsidian Business Planning Solutions We:</h1>
 
       <ul style="list-style: none;padding-top: 20px;padding-bottom: 5px;">
         <li>

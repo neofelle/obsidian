@@ -1,5 +1,5 @@
   <div class="section group footer-container" style="padding-top:30px;padding-bottom: 30px;">
-    <span style="color:white;text-align: center;text-transform: uppercase;font-size: 12px;width: 100%;display: block;">copyright all rights reserved © 2018 obsidian planning solutions</span>
+    <span style="color:white;text-align: center;text-transform: uppercase;font-size: 12px;width: 100%;display: block;">copyright all rights reserved © 2018 obsidian business planning solutions</span>
   </div>
 <!-- footer-->
 </div> <!-- footer-container -->
