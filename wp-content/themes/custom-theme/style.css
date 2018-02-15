@@ -8,7 +8,25 @@ Version: 1.2
 @import url('menu-iyc.css');
 @import url('css/side_sidebar.css');
 */
-
+/*------------------------------------*\
+    Fonts
+\*------------------------------------*/
+@font-face {
+  font-family: 'roboto';
+  src: url('css/fonts/Roboto-Black.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'montserrat-1';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('css/fonts/Montserrat-Regular.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'montserrat-2';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('css/fonts/Montserrat-Light.otf');
+	font-weight: normal !important;
+}
 /*------------------------------------*\
     Default Hidden
 \*------------------------------------*/
@@ -147,7 +165,7 @@ a:hover {
 p, ul  {
 	font-size: 1vw;
 	font-style: normal;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'montserrat-1', sans-serif;
 }
 
 .mobiletop {
@@ -167,25 +185,8 @@ p, ul  {
 /*------------------------------------*\
     STRUCTURE
 \*------------------------------------*/
-
-@font-face {
-	font-family: 'Montserrat-Regular';
-	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
-	src: url('fonts/Montserrat-Regular.otf');
-	font-weight: normal !important;
-}
-
-
-@font-face {
-	font-family: 'Montserrat';
-	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
-	src: url('fonts/Montserrat-Light.otf');
-	font-weight: normal !important;
-}
-
-
 h1, h2, h3 {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'montserrat-2', sans-serif;
 	font-weight: normal;
 }
 
@@ -218,7 +219,7 @@ h5 {
 
 body {
 	font-size: 100%;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'montserrat-1', sans-serif;
 	font-weight: normal;
 	background: #fff;
 	line-height: 1.2;
@@ -547,6 +548,7 @@ a.black-button {
 }
 .succession-title{
 	text-transform: uppercase;font-weight: bolder;text-align: center;color:white;font-size: 1.5vw;margin-bottom: 0px;
+	font-family: 'montserrat-1';
 }
 /* display triggers */
 .desktop-nav-1{
