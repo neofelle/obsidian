@@ -17,7 +17,9 @@ Version: 1.2
 .sidebar-768 {
 	display: none;
 }
-
+.img-ft{
+	width: 80%;
+}
 .sidebar-480 {
 	display: none;
 }

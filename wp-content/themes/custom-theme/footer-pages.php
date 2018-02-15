@@ -24,8 +24,8 @@
           <a href="" class="button-contact">CONTACT US</a>
         </div>
       </div>
-      <div class="col cpan_6_of_12" style="padding-left: 20px;padding-right: 20px;">
-        <img src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png" style="width:80%;"><br/>
+      <div class="left" style="padding: 0px; width: 50%;">
+        <img src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png" class="img-ft"><br/>
       </div>
 
     </div>
