@@ -30,7 +30,7 @@
             );
             $items_left = wp_get_nav_menu_items( 'NAV-LEFT', $menuargs); 
         ?>      
-        <div class="sidebar-1 cs-2" style="background-color: #986d2f;">
+        <div class="sidebar-1">
           <ul id="menu-sidebar-1" class="menu">
             <?php foreach( $items_left as $item ){ ?>
                 <li id="menu-item" class="menu-item menu-item-type-custom menu-item-object-custom menu-item"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
@@ -53,20 +53,32 @@
         <div class="container-pages" style="width: 100%;">
             <div class="col-md-12 page-content">
                 <div class="col-md-12 page-obsidian" style="width: 100%;padding-right: 10px;padding-left: 10px;margin: 0 auto;display: block;">
-                    <?php
-                        while ( have_posts() ) : the_post();
+                 
 
-                            get_template_part( 'template-parts/page/content', 'page' );
-                            the_content();
-                            // If comments are open or we have at least one comment, load up the comment template.
-                            if ( comments_open() || get_comments_number() ) :
-                                comments_template();
-                            endif;
+	<div class="col span_6_of_12" style="padding-left:10px;padding-right: 25px;">
+		<h4 style="font-size: 28px; margin-top: 0px;">OBSIDIAN BUSINESS PLANNING SOLUTIONS</h4>
+		Address: 2099 Gaither Road Suite 110 Rockville, MD 20850
 
-                        endwhile; // End of the loop.
+		Phone: 301-990-1165
+
+		Email: info@obsidianbusinesssolutions.com
+
+		<img style="width: 80%;" src="http://localhost/tim/wordpress/obsidian/wp-content/uploads/2018/02/map.jpg" />
+		<br style="clear: both;" /><a href="#">CLICK HERE TO SEE LARGER MAP</a>
+
+	</div>
+	<div class="col span_6_of_12" style="padding-left:25px;padding-right: 10px;">
+		<div class="contact-form-cs" style="background-color: #102157; font-size: 31px; padding: 30px;">
+
+			<span style="color: white; text-align: center; display: block; margin-bottom: 10px;">HOW CAN WE HELP</span>
+			<div style="border-top: 1px solid white;">[contact-form-7 id="84" title="Contact-us"]</div>
+		</div>
+	</div>
 
 
-                    ?>
+
+
+
                 </div>
             </div>
         </div>
