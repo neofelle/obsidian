@@ -12,7 +12,22 @@ Version: 1.2
 /*------------------------------------*\
     Default Hidden
 \*------------------------------------*/
-
+@font-face {
+  font-family: 'roboto';
+  src: url('css/fonts/Roboto-Black.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'montserrat-1';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('css/fonts/Montserrat-Regular.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'montserrat-2';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('css/fonts/Montserrat-Light.otf');
+	font-weight: normal !important;
+}
 .top-nav-holder-768,
 .sidebar-768 {
 	display: none;
@@ -275,13 +290,15 @@ ul li {
 	background: #fff;
 }
 
-
+img.footer-mobile-img {
+    max-width: 225px !important;
+}
 
 /*------------------------------------*\
     Left Side
 \*------------------------------------*/
 .img-ft{
-	width: 80%;
+	width: 65%;
 }
 .main-col-1 {
 	width: 25%;
@@ -730,7 +747,7 @@ a.black-button {
 	    font-size: 2.5vw;
 	}
 	span.txt-big {
-	    font-size: 3.5vw;
+	    font-size: 3vw;
 	}
 	.button-contact{
 		width: 85% !important;
@@ -812,7 +829,7 @@ a.black-button {
 	    font-size: 4.2vw;
 	}
 	span.txt-big {
-    	font-size: 4.5vw;
+    	font-size: 4vw;
 	}
 	img.footer-mobile-img {
 	    text-align: center;
@@ -1109,6 +1126,7 @@ a.black-button {
     padding-bottom: 10px;
     border: 1px solid white;
     margin: 0 auto;
+    text-decoration: none;
 }
 .button-contact:hover{
 	color: yellow;
@@ -1117,7 +1135,7 @@ a.black-button {
 	text-align: center;
 	color: white;
 	display: block;
-	font-size: 2.5vw;
+	font-size: 1.5vw;
 	margin-top: 20px;
 }
 .col-4 {
@@ -1944,6 +1962,9 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 }
 @media screen and (max-width: 1600px) {
+	.img-ft{
+		width: 80%;
+	}
 	.map{
 		width: 100%;
 		height: 911px;
@@ -1968,6 +1989,23 @@ input.wpcf7-form-control.wpcf7-submit {
 	.footer-nav ul li {
 	    margin-left: 1%;
 	}
+	.button-contact {
+	    text-transform: uppercase;
+	    color: white;
+	    font-size: 1vw;
+	    text-align: center;
+	    display: block;
+	    width: 80%;
+	    background-color: #102157;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    border: 1px solid white;
+	    margin: 0 auto;
+	    text-decoration: none;
+	}
+
 	.top-nav ul li:after 
 	.footer-nav ul li:after {
     	margin-left: 5px;
@@ -2210,7 +2248,7 @@ input.wpcf7-form-control.wpcf7-submit {
     	font-size: 5.2vw !important;
 	}
 	span.txt-big {
-	    font-size: 6.5vw !important;
+	    font-size: 6vw !important;
 	}
 	img.footer-mobile-img {
 	    text-align: center;

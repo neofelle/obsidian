@@ -238,7 +238,7 @@
 		      	<h3 class="default">Do you just need to understand the process and steps that will optimize your exit?</h3>
 		      	<br style="clear: both;"><br/>
 		      	<div style="width: 100%;text-align: center;">
-		      		<a class="button-white" href="#">Learn More</a>
+		      		<a class="button-white" href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>">Learn More</a>
 		      	</div>
 	      	</div>
     	</div>

@@ -12,7 +12,7 @@ Template Name: Homepage
           <div class="col span_6_of_12 left">
             <h3 class="title justify" style="font-weight: bolder;color:white;">Struggling to delegate critical functions to your management team to grow your business?</h3>
             <p class="justify" style="color: white;">Worried about having enough money to continue your current lifestyle unless you are 100% hands on?</p>
-            <a href="" class="button-about">Create a unique design that is all your own - Get Started</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about">Create a unique design that is all your own - Get Started</a>
           </div>
           <div class="col span_6_of_12 left" style="text-align: right;padding-right: 40px;">
             <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-1-rev.jpg">
@@ -30,7 +30,7 @@ Template Name: Homepage
           <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:white;">Struggling to delegate critical functions to your management team to grow your business?</h3>
             <p style="text-align:center;color: white;">Worried about having enough money to continue your current lifestyle unless you are 100% hands on?</p>
-            <a href="" class="button-about">Create a unique design that is all your own - Get Started</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about">Create a unique design that is all your own - Get Started</a>
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ Template Name: Homepage
           <div class="col span_7_of_12 container-about-2 left" style="padding-right: 40px;padding-top: 25px;padding-bottom: 20px;">
             <h3 class="title justify" style="font-weight: bolder;color:black;">Do you want to provide financial security for yourself and your family?</h3>
             <p class="justify" style="color: black;">Learn how to structure your business to grow without you at the helm</p>
-            <a href="" class="button-about-2">Get Help Today</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about-2">Get Help Today</a>
           </div>
         </div>
       </div>
@@ -61,7 +61,7 @@ Template Name: Homepage
           <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:black;">Do you want to provide financial security for yourself and your family?</h3>
             <p class="" style="text-align:center;color: black;">Learn how to structure your business to grow without you at the helm</p>
-            <a href="" class="button-about-2">Get Help Today</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about-2">Get Help Today</a>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@ Template Name: Homepage
           <div class="col span_6_of_12 left">
             <h3 class="title justify" style="font-weight: bolder;color:white;">Are you running a small business, working too hard, and feel you are in a rut?</h3>
             <p class="justify" style="color: white;">Need an exit plan that will include protecting your family and business? <br/><br/>Take the anxiety out of the process.</p>
-            <a href="" class="button-about">Schedule an introductory meeting</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about">Schedule an introductory meeting</a>
           </div>
           <div class="col span_6_of_12 left" style="text-align: right;padding-right: 40px;">
             <img class="img-about" src="<?php bloginfo('template_directory'); ?>/images/home/image-section-3-rev2.jpg">
@@ -92,7 +92,7 @@ Template Name: Homepage
           <div class="col span_12_of_12 left" style="text-align: center;padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:white;">Are you running a small business, working too hard, and feel you are in a rut?</h3>
             <p class="" style="text-align:center;color: white;">Need an exit plan that will include protecting your family and business? <br/><br/>Take the anxiety out of the process.</p>
-            <a href="" class="button-about">Schedule an introductory meeting</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about">Schedule an introductory meeting</a>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@ Template Name: Homepage
           <div class="col span_7_of_12 container-about-2 left" style="padding-right: 40px;padding-top: 25px;padding-bottom: 20px;">
             <h3 class="title justify" style="font-weight: bolder;color:black;">Need a plan and a process of structuring your business to secure your future?</h3>
             <p class="justify" style="color: black;">Take the anxiety and uncertainty out of your future with one simple, no-cost introductory meeting you can take the first step</p>
-            <a href="" class="button-about-2">Get small business specialist help today</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about-2">Get small business specialist help today</a>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@ Template Name: Homepage
           <div class="col span_12_of_12" style="padding-right: 10px;padding-left: 10px;">
             <h3 class="title" style="text-align:center;font-weight: bolder;color:black;">Need a plan and a process of structuring your business to secure your future?</h3>
             <p class="" style="text-align:center;color: black;">Take the anxiety and uncertainty out of your future with one simple, no-cost introductory meetingm you can take the first step</p>
-            <a href="" class="button-about-2">Get small business specialist help today</a>
+            <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-about-2">Get small business specialist help today</a>
           </div>
         </div>
       </div>
@@ -310,13 +310,13 @@ Template Name: Homepage
       </div>
       <span class="txt-small">2099 Gaither Road Suite 110 <br/> Rockville, MD 20850</span>
       <br/>
-      <span class="txt-big">301-990-1165</span>
+      <span class="txt-big">301-990-4395</span>
       <br/><br/>
       <div class="col span_6_of_12 left">
-        <a href="" class="button-contact">REVIEW US</a>
+        <a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>" class="button-contact">REVIEW US</a>
       </div>
       <div class="col span_6_of_12 left">
-        <a href="" class="button-contact">CONTACT US</a>
+        <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-contact">CONTACT US</a>
       </div>
       <br/>
       <div style="width: 50%; margin: 0 auto;padding-top: 30px;margin-top: 10px;position: relative;top:20px;left: 30px;">
@@ -402,14 +402,14 @@ Template Name: Homepage
       </div>
       <span class="txt-small">2099 Gaither Road Suite 110 <br/> Rockville, MD 20850</span>
       <br/>
-      <span class="txt-big">301-990-1165</span>
+      <span class="txt-big">301-990-4395</span>
       <br/><br/>
       <div style="width: 60%;margin:0 auto;">
         <div class="col span_6_of_12 left mobile-button-container">
-          <a href="" class="button-contact">REVIEW US</a>
+          <a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>" class="button-contact">REVIEW US</a>
         </div>
         <div class="col span_6_of_12 left mobile-button-container">
-          <a href="" class="button-contact">CONTACT US</a>
+          <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-contact">CONTACT US</a>
         </div>
       </div>
       <br/>

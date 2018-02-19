@@ -281,6 +281,9 @@ a.nav-home.text-caps {
 .button-about:hover{
 	color:yellow;
 }
+img.footer-mobile-img {
+    max-width: 225px !important;
+}
 .button-about-2{
 	background-color: #704618;
 	border:1px solid #102157;
@@ -1085,7 +1088,7 @@ a.black-button {
 	text-align: center;
 	color: white;
 	display: block;
-	font-size: 2.5vw;
+	font-size: 1.5vw;
 	margin-top: 20px;
 }
 .col-4 {
@@ -1886,7 +1889,22 @@ h2.remove-margin {
 	.footer-nav ul li {
 	    margin-left: 1%;
 	}
-
+	.button-contact {
+	    text-transform: uppercase;
+	    color: white;
+	    font-size: 1vw;
+	    text-align: center;
+	    display: block;
+	    width: 80%;
+	    background-color: #102157;
+	    padding-left: 10px;
+	    padding-right: 10px;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    border: 1px solid white;
+	    margin: 0 auto;
+	    text-decoration: none;
+	}
 	.top-nav ul li:after 
 	.footer-nav ul li:after {
     	margin-left: 5px;

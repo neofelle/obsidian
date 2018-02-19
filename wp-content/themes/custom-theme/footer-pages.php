@@ -9,24 +9,26 @@
   </div>
   <div class="col span_5_of_12 bg-contact" style="height: 520px;">
     <div class="contact-container">
-      <div style="width: 50%; margin: 0 auto;padding-top: 30px;">
-        <img src="<?php bloginfo('template_directory'); ?>/images/home/obsidian-white.png" style="width:100%;"><br/>
+      <div style="width: 50%; margin: 0 auto;padding-top: 30px;text-align: center;">
+        <img src="<?php bloginfo('template_directory'); ?>/images/home/obsidian-white.png" style="width:66%;"><br/>
       </div>
       <span class="txt-small">2099 Gaither Road Suite 110 Rockville, MD 20850</span>
-      <br/>
       <span class="txt-big">301-990-1165</span>
       <br/>
-      <div class="col span_6_of_12">
-        <div class="col span_12_of_12 left" style="margin-bottom: 30px;">
-          <a href="" class="button-contact">REVIEW US</a>
+      <div class="mobile-adv" style="width: 50%; margin: 0 auto;padding-top: 15px;margin-top: 0px;position: relative;top:0px;text-align: center;">
+        <img src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png" class="footer-mobile-img"><br/>
+      </div>
+      <br/><br/>
+      <div style="width: 60%;margin:0 auto;">
+        <div class="col span_6_of_12 left mobile-button-container">
+          <a href="<?php echo get_permalink( get_page_by_path( 'about' ) ); ?>" class="button-contact">REVIEW US</a>
         </div>
-        <div class="col span_12_of_12 left">
-          <a href="" class="button-contact">CONTACT US</a>
+        <div class="col span_6_of_12 left mobile-button-container">
+          <a href="<?php echo get_permalink( get_page_by_path( 'contact' ) ); ?>" class="button-contact">CONTACT US</a>
         </div>
       </div>
-      <div class="left" style="padding: 0px; width: 50%;">
-        <img src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png" class="img-ft"><br/>
-      </div>
+
+
 
     </div>
   </div>
@@ -48,6 +50,9 @@
       <span class="txt-small">2099 Gaither Road Suite 110 <br/> Rockville, MD 20850</span>
       <br/>
       <span class="txt-big">301-990-1165</span>
+      <div class="mobile-adv" style="width: 50%; margin: 0 auto;padding-top: 20px;position: relative;top:10px;text-align: center;">
+        <img class="footer-mobile-img" src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png"><br/>
+      </div>
       <br/><br/>
       <div style="width: 60%;margin:0 auto;">
         <div class="col span_6_of_12 left mobile-button-container">
@@ -56,10 +61,6 @@
         <div class="col span_6_of_12 left mobile-button-container">
           <a href="" class="button-contact">CONTACT US</a>
         </div>
-      </div>
-      <br/>
-      <div class="mobile-adv" style="width: 50%; margin: 0 auto;padding-top: 30px;margin-top: 10px;position: relative;top:20px;left: 30px;">
-        <img class="footer-mobile-img" src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png"><br/>
       </div>
     </div>
   </div>
