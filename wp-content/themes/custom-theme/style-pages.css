@@ -69,12 +69,15 @@ float:left;*/
 }
 .map{
 	width: 100%;
-	height: 897px;
+	height: 932px;
 }
 /*------------------------------------*\
     Table of Contents
 \*------------------------------------*/
-
+.contact-title{
+	font-size: 1.5vw;
+	margin-top: 0px;
+}
 #toc-np-container p {
 	cursor: pointer;
 }
@@ -1539,6 +1542,10 @@ label.container-checkbox {
 .bold{
 	font-weight: bold;
 }
+p.contact-text {
+    font-size: 1vw;
+    font-weight: bolder;
+}
 .border {
 	border-bottom: 1px solid #fff;
 }
@@ -1931,7 +1938,7 @@ h2.remove-margin {
 /* Contact us form */
 span.form-txt,span.wpcf7-quiz-label {
     color: white;
-    font-size: 20px;
+    font-size: 1vw;
 }
 input.wpcf7-form-control.wpcf7-text,textarea.wpcf7-form-control.wpcf7-textarea,input.wpcf7-form-control.wpcf7-quiz{
 	margin-top: 10px;
@@ -1963,29 +1970,14 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 1863px) {
 	.map{
 		width: 100%;
-		height: 896px;
+		height: 931px;
 	}
 }
-@media screen and (max-width: 1671px) {
-	.map{
-		width: 100%;
-		height: 875px;
-	}
-}
-@media screen and (max-width: 1655px) {
-	.map{
-		width: 100%;
-		height: 895px;
-	}
-}
+
 
 @media screen and (max-width: 1598px) {
 	.img-ft{
 		width: 80%;
-	}
-	.map{
-		width: 100%;
-    	height: 874px;
 	}
 }
 @media screen and (max-width: 1570px) {
@@ -2002,13 +1994,14 @@ input.wpcf7-form-control.wpcf7-submit {
 		height: 100vh !important;
 	}
 }
-@media screen and (max-width: 1435px) {
-	.map {
-	    width: 100%;
-	    height: 846px;
-	}
-}
 @media screen and (max-width: 1370px) {
+	.page-content {
+	    width: 100%;
+	    padding-right: 10px;
+	    padding-left: 10px;
+	    margin: 0 auto;
+	    display: block;
+	}
 	.top-nav ul li,
 	.footer-nav ul li {
 	    margin-left: 1%;
@@ -2039,6 +2032,12 @@ input.wpcf7-form-control.wpcf7-submit {
 	    font-size: 1.4vw;
 	}
 }
+@media screen and (max-width: 1366px) {
+	.map{
+		width: 100%;
+		height: 941px;
+	}
+}
 
 /*------------------------------------*\
     1024
@@ -2049,9 +2048,6 @@ input.wpcf7-form-control.wpcf7-submit {
 	    color: #986d2f;
 	    font-size: 21px;
 	    letter-spacing: -2px;
-	}
-	p.bold {
-	    font-size: 14px;
 	}
 	.main-content p, .main-content ul {
 	    font-size: 1.2vw;
@@ -2071,10 +2067,6 @@ input.wpcf7-form-control.wpcf7-submit {
 	.footer-nav ul li:after {
     	margin-left: 3px;
 	}
-	.map{
-		width: 100%;
-   		height: 904px;
-	}
 }
 @media screen and (max-width: 1240px) {
 	.map {
@@ -2085,7 +2077,7 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 1235px) {
 	.map {
 	    width: 100%;
-	    height: 697px;
+	    height: 762px;
 	}
 	input.wpcf7-form-control.wpcf7-text, textarea.wpcf7-form-control.wpcf7-textarea, input.wpcf7-form-control.wpcf7-quiz {
 	    margin-top: 10px;
@@ -2199,7 +2191,7 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 1060px) {
 	.map{
 		width: 100%;
-		height: 695px;
+		height: 769px;
 	}
 }
 
@@ -2210,7 +2202,7 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 	.map{
 		width: 100%;
-		height: 718px;
+		height: 735px;
 	}
 	p, ul {
 	    font-size: 1vw;
@@ -2227,7 +2219,7 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 988px) {
 	.map{
 		width: 100%;
-		height: 687px;
+		height: 732px;
 	}
 }
 
@@ -2264,13 +2256,29 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 768px) {
 	.map{
 		width: 100%;
-		height: 674px;
+		height: 748px;
+	}
+	.contact-title {
+	    font-size: 1.9vw;
+	    margin-top: 0px;
+	}
+	p.contact-text {
+	    font-size: 1.3vw;
+	    font-weight: bolder;
 	}
 }
 @media screen and (max-width: 712px) {
 	.map{
 		width: 100%;
 		height: 550px;
+	}
+	p.contact-text {
+	    font-size: 2.3vw;
+	    font-weight: bolder;
+	}
+	.contact-title {
+	    font-size: 3.7vw;
+	    margin-top: 0px;
 	}
 	.col.span_6_of_12 {
 	    width: 100%;
@@ -2304,6 +2312,16 @@ input.wpcf7-form-control.wpcf7-submit {
 	.mobile-adv{
 		position: relative;
 		left:0px !important;
+	}
+}
+@media(max-width: 480px){
+	.contact-title {
+	    font-size: 4.2vw;
+	    margin-top: 0px;
+	}
+	p.contact-text {
+	    font-size: 2.76vw;
+	    font-weight: bolder;
 	}
 }
 @media(max-width: 400px){
