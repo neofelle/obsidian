@@ -69,7 +69,7 @@ float:left;*/
 }
 .map{
 	width: 100%;
-	height: 966px;
+	height: 897px;
 }
 /*------------------------------------*\
     Table of Contents
@@ -164,6 +164,7 @@ p, ul  {
 	font-size: 18px;
 	font-style: normal;
 	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
 }
 
 .mobiletop {
@@ -254,7 +255,8 @@ p, ul  {
 	}
 	h4{
 		color:#986d2f;
-		font-size: 22px;
+		font-size: 24px;
+		letter-spacing: -2px;
 	}
 
 /*------------------------------------*\
@@ -1534,6 +1536,9 @@ label.container-checkbox {
 	font-size: 1vw;
 }
 
+.bold{
+	font-weight: bold;
+}
 .border {
 	border-bottom: 1px solid #fff;
 }
@@ -1958,16 +1963,29 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 1863px) {
 	.map{
 		width: 100%;
-		height: 932px;
+		height: 896px;
 	}
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1671px) {
+	.map{
+		width: 100%;
+		height: 875px;
+	}
+}
+@media screen and (max-width: 1655px) {
+	.map{
+		width: 100%;
+		height: 895px;
+	}
+}
+
+@media screen and (max-width: 1598px) {
 	.img-ft{
 		width: 80%;
 	}
 	.map{
 		width: 100%;
-		height: 911px;
+    	height: 874px;
 	}
 }
 @media screen and (max-width: 1570px) {
@@ -1982,6 +2000,12 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 	.cs-2{
 		height: 100vh !important;
+	}
+}
+@media screen and (max-width: 1435px) {
+	.map {
+	    width: 100%;
+	    height: 846px;
 	}
 }
 @media screen and (max-width: 1370px) {
@@ -2021,7 +2045,14 @@ input.wpcf7-form-control.wpcf7-submit {
 \*------------------------------------*/
 
 @media screen and (max-width: 1280px) {
-	
+	h4 {
+	    color: #986d2f;
+	    font-size: 21px;
+	    letter-spacing: -2px;
+	}
+	p.bold {
+	    font-size: 14px;
+	}
 	.main-content p, .main-content ul {
 	    font-size: 1.2vw;
 	}
@@ -2040,13 +2071,21 @@ input.wpcf7-form-control.wpcf7-submit {
 	.footer-nav ul li:after {
     	margin-left: 3px;
 	}
-
-}
-
-@media screen and (max-width: 1235px) {
 	.map{
 		width: 100%;
-   		height: 708px;
+   		height: 904px;
+	}
+}
+@media screen and (max-width: 1240px) {
+	.map {
+	    width: 100%;
+	    height: 881px;
+	}
+}
+@media screen and (max-width: 1235px) {
+	.map {
+	    width: 100%;
+	    height: 697px;
 	}
 	input.wpcf7-form-control.wpcf7-text, textarea.wpcf7-form-control.wpcf7-textarea, input.wpcf7-form-control.wpcf7-quiz {
 	    margin-top: 10px;
@@ -2157,10 +2196,10 @@ input.wpcf7-form-control.wpcf7-submit {
 	}
 }
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 1060px) {
 	.map{
 		width: 100%;
-		height: 673px;
+		height: 695px;
 	}
 }
 
@@ -2225,13 +2264,13 @@ input.wpcf7-form-control.wpcf7-submit {
 @media screen and (max-width: 768px) {
 	.map{
 		width: 100%;
-		height: 681px;
+		height: 674px;
 	}
 }
 @media screen and (max-width: 712px) {
 	.map{
 		width: 100%;
-		height: fit-content;
+		height: 550px;
 	}
 	.col.span_6_of_12 {
 	    width: 100%;
@@ -2243,6 +2282,10 @@ input.wpcf7-form-control.wpcf7-submit {
 @media(max-width: 500px){
 	.button-contact{
 		font-size: 5vw !important;
+	}
+	.map{
+		width: 100%;
+		height: 400px;
 	}
 	span.txt-small {
     	font-size: 5.2vw !important;
@@ -2263,7 +2306,12 @@ input.wpcf7-form-control.wpcf7-submit {
 		left:0px !important;
 	}
 }
-
+@media(max-width: 400px){
+	.map{
+		width: 100%;
+		height: 300px;
+	}
+}
 
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
     width: 300px;
