@@ -154,11 +154,7 @@
 				</div>
 	      	</div>
 	        <div class="col span_6_of_12 top-nav n2">
-		        <ul id="menu-main-menu" class="menu">
-				 <?php foreach( $items as $item ){ ?>
-		          	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-4 current_page_item"><a class="nav-home text-caps black" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
-		       	<?php } ?> 
-		        </ul>
+ 				<?php wp_nav_menu( array( "menu_id" => "MAIN-MENU", 'container_class' => 'my_extra_menu_class' ) ); ?> 
 	        </div> <!-- /top-nav -->
 	        <div class="col span_2_of_12 top-contact n3" style="padding-top: 0px;margin-top: 20px;height: 45px;border-left: 1px solid #112057;">
 	          <!-- <img src="https://www.customwinecellarssandiego.com/wp-content/themes/customwinecellars_template/images/Custom Wine Cellars San Diego Phone.png" alt="Custom Wine Cellars San Diego Phone"> -->

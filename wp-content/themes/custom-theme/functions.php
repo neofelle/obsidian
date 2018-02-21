@@ -447,6 +447,18 @@ function twentyseventeen_excerpt_more( $link ) {
 }
 add_filter( 'excerpt_more', 'twentyseventeen_excerpt_more' );
 
+add_filter('walker_nav_menu_start_el', 'maiorano_generate_nav_images', 20, 4);
+function maiorano_generate_nav_images($item_output, $item, $depth, $args){
+    if(has_post_thumbnail($item->object_id)){
+        $dom = new DOMDocument(); //DOM Parser because RegEx is a terrible idea
+        $dom->loadHTML($item_output); //Load the markup provided by the original walker
+        $img = $dom->createDocumentFragment(); //Create arbitrary Element
+        $img->appendXML(get_the_post_thumbnail($item->object_id, 'thumbnail')); //Apply image data via string
+        $dom->getElementsByTagName('a')->item(0)->appendChild($img); //Append the image to the link
+        $item_output = $dom->saveHTML(); //Replace the original output
+    }
+    return $item_output;
+}
 /**
  * Handles JavaScript detection.
  *

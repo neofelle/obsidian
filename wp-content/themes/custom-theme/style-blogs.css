@@ -35,7 +35,22 @@ Version: 1.2
 /*------------------------------------*\
     Slingpic
 \*------------------------------------*/
-
+@font-face {
+  font-family: 'roboto';
+  src: url('css/fonts/Roboto-Black.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'montserrat-1';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('css/fonts/Montserrat-Regular.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'montserrat-2';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('css/fonts/Montserrat-Light.otf');
+	font-weight: normal !important;
+}
 .slingpic[style] {
 	margin:5px auto !important;
 	height:auto !important;
