@@ -320,7 +320,9 @@ Template Name: Homepage
       </div>
       <br/>
       <div style="width: 50%; margin: 0 auto;padding-top: 30px;margin-top: 10px;position: relative;top:20px;left: 30px;">
-        <img src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png" style="width:80%;"><br/>
+        <a target="_new" href="https://www.exitmap.com/myexitmap/">
+            <img src="<?php bloginfo('template_directory'); ?>/images/home/exit-map.png" style="width:80%;"><br/>
+        </a>
       </div>
     </div>
   </div>
