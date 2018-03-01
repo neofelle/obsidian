@@ -342,6 +342,8 @@ img.footer-mobile-img {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+	background-color: #9f773e;
+    height: 135vh !important;
 }
 
 a.nav-home.text-caps {
@@ -727,6 +729,13 @@ a.black-button {
 @media(max-width: 768px){
 	.business-header {
   		font-size: 4.5vw;
+	}
+	.sidebar-1  ul, .sidebar-2 ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		background-color: #9f773e;
+	    height: auto !important;
 	}
 	.mobile-divider{
 		margin-bottom: 15px;
