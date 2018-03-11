@@ -54,10 +54,6 @@
 	    .col-10 ul li { color: #ffb900 !important; }
 
 	    .top-nav-holder { background-color: #ffffff; }
-
-	   
-	    .sidebar-1 ul li,
-	    .sidebar-2 ul li { border-color:#af9063; }
 	    
 	    .blogpost h2 a { color:#05374f !important; }
 	    .blogpost a { color: #ffb900 !important; }
@@ -146,6 +142,19 @@
 
 <!-- container -->
 <div class="section group container">
+	<div class="desktop-nav-1 vd-menu">
+		<div class="col sp-6" style="margin: 0 auto;">
+			<header id="masthead" class="site-header" role="banner">
+				<?php if ( has_nav_menu( 'top' ) ) : ?>
+					<div class="navigation-top">
+						<div class="wrap">
+							<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+						</div><!-- .wrap -->
+					</div><!-- .navigation-top -->
+				<?php endif; ?>
+			</header><!-- #masthead -->
+		</div>
+	</div>
 	<div class="col span_12_of_12 nav_main desktop-nav-1">
 	    <div class="top-nav-holder desktop-nav-1">
 	      	<div class="col span_4_of_12 top-nav n1">

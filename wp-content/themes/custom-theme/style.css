@@ -69,7 +69,9 @@ Version: 1.2
 /*padding: 5px 20px 20px 0px !important;
 float:left;*/
 }
-
+.vd-menu{
+	width: 100%;display: flex;
+}
 /*------------------------------------*\
     Table of Contents
 \*------------------------------------*/
@@ -257,6 +259,9 @@ ul li {
 .r-container{
 	background-color: white;width: 80%;margin: 0 auto;border-radius: 4px;padding-top:40px;padding-bottom:40px;padding-left:50px;padding-right:50px;box-shadow: 1px -1px 20px 4px #000000;
 }
+.r-container-portal{
+	background-color: white;width: 80%;margin: 0 auto;border-radius: 4px;box-shadow: 1px -1px 20px 4px #000000;
+}
 .block-img{
 	width: 100%;
     max-width: 100px;
@@ -271,6 +276,52 @@ ul li {
     padding-left: 70px;
     padding-right: 70px;
     font-size: 28px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+}
+.icon-portal{
+    max-width: 40px;
+    position: relative;
+    right: 7px;
+    top: 3px;
+}
+.button-portal-1{
+    color: white;
+    background-color: #112057;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 25px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+.button-portal-2{
+    color: white;
+    background-color: #966a2b;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 25px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+.button-portal-2:hover{
+    color: white;
+    background-color: #966a2b;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 25px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    border-radius: 5px;
+}
+.button-portal-1:hover{
+    color: white;
+    background-color: #112057;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 25px;
     padding-top: 7px;
     padding-bottom: 7px;
     border-radius: 5px;
@@ -413,7 +464,7 @@ a.nav-home.text-caps {
 }
 
 .banner-content{
-	position: relative;top: 5vw;
+	position: relative;top: 3vw;
 }
 
 .banner-content > h2.header{
@@ -472,13 +523,6 @@ a.nav-home.text-caps {
     margin: 0 auto;
     width: 7vw;
 }
-
-li.menu-item{
-    padding-top: 0.7vw;
-    padding-bottom: 0.7vw;
-    margin-left: 20px;
-}
-
 .sidebar-1 {
 	background: #986d2f;
 }
@@ -624,6 +668,11 @@ a.black-button {
 	text-transform: uppercase;font-weight: bolder;text-align: center;color:white;font-size: 1.5vw;margin-bottom: 0px;
 	font-family: 'montserrat-1';
 }
+.menu-main-menu-container {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
 /* display triggers */
 .desktop-nav-1{
 	display: block;
@@ -673,17 +722,33 @@ a.black-button {
 		width: 33.33%;
 		display: block;
 	}
+	ul#menu-main-menu{
+		display: none;
+	}
+	.mobiletop{
+		display: block !important;
+	}
+	.vd-menu, .top-nav-holder.desktop-nav-1{
+		display: none !important;
+
+	}
+	.top-nav-holder-768, .sidebar-768{
+		display: block !important;
+	}
 	.desktop-nav-1{
 		display: none;
 	}
 	.tablet-nav-1{
-		display: block;
+		display: block !important;
 	}
 	.tablet-navigation{
 		display: block;
 	}
 	.top-nav ul li:hover, .top-nav ul li {
     	border-top: 0px !important;
+	}
+	.col.span_6_of_12.top-contact.n3 {
+	    display: none !important;
 	}
 	.top-nav ul {
 	    text-align: center;
@@ -946,9 +1011,8 @@ a.black-button {
 	/*border-left: 15px solid #fff;*/
 	position: relative;
 }
-
 .top-nav-holder {
-	background: #000000;
+	background: white;
 	overflow: hidden;
 	/*border-bottom: 15px solid #fff;*/
 	display: flex;
@@ -1332,7 +1396,10 @@ label.container-checkbox {
 		transform: translate(-50%, 0);
 		width: 100%;
 }
-
+ul#menu-sidebar-1 > li {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
 /*.col-5 .content img {
 	display: block;
 	margin:auto;
@@ -1926,7 +1993,9 @@ h2.remove-margin {
     width: 100%;
     height: 100%;
 }
-
+.mr-top {
+    margin-top: 140px;
+}
 @media screen and (max-width: 1570px) {
 	.n1{
 		width: 25%; 
@@ -1939,12 +2008,22 @@ h2.remove-margin {
 	}
 
 }
+@media screen and (max-width: 1450px) {
+	#MAIN-MENU {
+	    left: 50%;
+	}
+}
 @media screen and (max-width: 1370px) {
 	.top-nav ul li,
 	.footer-nav ul li {
 	    margin-left: 1%;
 	}
-
+	.sp-6 {
+	    width: 75%;
+	}
+	#MAIN-MENU {
+	    left: 35%;
+	}
 	.top-nav ul li:after 
 	.footer-nav ul li:after {
     	margin-left: 5px;
@@ -1968,7 +2047,11 @@ h2.remove-margin {
     1024
 \*------------------------------------*/
 
-
+@media screen and (max-width: 1320px) {
+	#MAIN-MENU {
+	    left: 30%;
+	}
+}
 
 @media screen and (max-width: 1280px) {
 	.sidebar-1 ul, .sidebar-2 ul {
@@ -2000,7 +2083,20 @@ h2.remove-margin {
 
 }
 
-
+@media screen and (max-width: 1221px) {
+	ul#MAIN-MENU > li {
+	    font-size: 15px;
+	}
+	ul.sub-menu > li {
+	    font-size: 15px;
+	}
+	li.menu-item {
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    margin-left: 0px;
+	    padding-top: 34px;
+	}
+}
 @media screen and (max-width: 1200px) {
 	.n1{
 		width: 20%; 
@@ -2013,7 +2109,79 @@ h2.remove-margin {
 	}
 
 }
-
+@media screen and (max-width: 1111px) {
+	.sd-portal{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.button-portal-1 {
+	    color: white;
+	    background-color: #112057;
+	    padding-left: 45px;
+	    padding-right: 45px;
+	    font-size: 15px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.button-portal-2 {
+	    color: white;
+	    background-color: #966a2b;
+	    padding-left: 45px;
+	    padding-right: 45px;
+	    font-size: 15px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.icon-portal {
+	    max-width: 26px;
+	    position: relative;
+	    right: 7px;
+	    top: 3px;
+	}
+	.button-portal-1:hover {
+	    color: white;
+	    background-color: #112057;
+	    padding-left: 45px;
+	    padding-right: 45px;
+	    font-size: 15px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.button-portal-2:hover {
+	    color: white;
+	    background-color: #966a2b;
+	    padding-left: 45px;
+	    padding-right: 45px;
+	    font-size: 15px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.mr-top {
+	    margin-top: 140px;
+	}
+	ul#MAIN-MENU > li {
+	    font-size: 12px;
+	}
+	ul.sub-menu > li {
+	    font-size: 12px;
+	}
+	li.menu-item {
+	    padding-top: 5px;
+	    padding-bottom: 5px;
+	    margin-left: 0px;
+	    padding-top: 38px;
+	}
+	#MAIN-MENU {
+	    left: 32%;
+	}
+	.main-navigation ul li.menu-item-has-children.focus:before, .main-navigation ul li.menu-item-has-children:hover:before, .main-navigation ul li.menu-item-has-children.focus:after, .main-navigation ul li.menu-item-has-children:hover:after, .main-navigation ul li.page_item_has_children.focus:before, .main-navigation ul li.page_item_has_children:hover:before, .main-navigation ul li.page_item_has_children.focus:after, .main-navigation ul li.page_item_has_children:hover:after{
+		margin-right: 25px;
+	}
+}
 @media screen and (max-width: 1080px) {
 	.checkmark {
 	    position: absolute;
@@ -2105,7 +2273,81 @@ h2.remove-margin {
 	}
 
 }
+@media screen and (max-width: 991px) {
+	li.menu-item {
+	    padding-bottom: 0px;
+	    padding-top: 0px;
+	    font-size: 15px;
+	    margin-left: 0px !important;
+	}
+	.span_5_of_12 {
+    	width: 30.66%;
+	}
+	.col-2-container{
+		width: 100% !important;
+	}
+	.col-1-container{
+		width: 100% !important;
+	}
+	.main-col-2{
+		width: 100% !important;
+	}
+	li.menu-item:hover {
+    	border-top: 1px solid #fff !important;
+    	border-bottom: 1px solid #fff;
+    	border-right: 1px solid #fff;
+	}
+	.button-portal-1 {
+	    color: white;
+	    background-color: #112057;
+		padding-left: 20px;
+    	padding-right: 20px;
+	    font-size: 10px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.button-portal-2 {
+	    color: white;
+	    background-color: #966a2b;
+		padding-left: 20px;
+    	padding-right: 20px;
+	    font-size: 10px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.icon-portal {
+	    max-width: 15px;
+	    position: relative;
+	    right: 7px;
+	    top: 3px;
+	}
+	.button-portal-1:hover {
+	    color: white;
+	    background-color: #112057;
+		padding-left: 20px;
+    	padding-right: 20px;
+	    font-size: 10px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.button-portal-2:hover {
+	    color: white;
+	    background-color: #966a2b;
+		padding-left: 20px;
+    	padding-right: 20px;
+	    font-size: 10px;
+	    padding-top: 8px;
+	    padding-bottom: 13px;
+	    border-radius: 5px;
+	}
+	.mr-top {
+	    margin-top: 75px;
+	}
 
+}
 @media screen and (max-width: 891px) {
 	.nav_main {
 	    height: 95px;
@@ -2130,6 +2372,23 @@ h2.remove-margin {
 	    position: relative;
 	    top: 10px;
 	    left: 10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.col-1-container{
+		height: auto;
+	}
+	.button-about {
+   	 	font-size: 3.2vw;
+	}
+	.col-1 .content h3 {
+	    font-size: 3.8vw;
+	}
+	.col-1 .content p {
+	    font-size: 2.8vw;
+	}
+	.mr-top {
+	    margin-top: 35px;
 	}
 }
 @media(max-width: 500px){

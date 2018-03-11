@@ -104,7 +104,7 @@ function twentyseventeen_setup() {
 	 * This theme styles the visual editor to resemble the theme style,
 	 * specifically font, colors, and column width.
  	 */
-	//add_editor_style( array( 'assets/css/editor-style.css', twentyseventeen_fonts_url() ) );
+	add_editor_style( array( 'assets/css/editor-style.css', twentyseventeen_fonts_url() ) );
 
 	// Define and register starter content to showcase the theme on new sites.
 	$starter_content = array(
@@ -249,7 +249,7 @@ function twentyseventeen_content_width() {
 	 *
 	 * @since Twenty Seventeen 1.0
 	 *
-	 * @param $content_width integer
+	 * @param int $content_width Content width in pixels.
 	 */
 	$GLOBALS['content_width'] = apply_filters( 'twentyseventeen_content_width', $content_width );
 }
@@ -261,7 +261,7 @@ add_action( 'template_redirect', 'twentyseventeen_content_width', 0 );
 function twentyseventeen_fonts_url() {
 	$fonts_url = '';
 
-	/**
+	/*
 	 * Translators: If there are characters in your language that are not
 	 * supported by Libre Franklin, translate this to 'off'. Do not translate
 	 * into your own language.
@@ -311,116 +311,34 @@ add_filter( 'wp_resource_hints', 'twentyseventeen_resource_hints', 10, 2 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function twentyseventeen_widgets_init() {
-  // Sidebar 1
-    register_sidebar(array(
-        'name' => __('Sidebar 1', ''),
-        'description' => __('Description for this widget-area...', ''),
-        'id' => 'widget-area-1',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
-    // Define Sidebar Widget Area 2
-    register_sidebar(array(
-        'name' => __('Sidebar 2', ''),
-        'description' => __('Description for this widget-area...', ''),
-        'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
-
-     // Define Sidebar Widget Area 2
-    register_sidebar(array(
-        'name' => __('Sidebar 3', ''),
-        'description' => __('Description for this widget-area...', ''),
-        'id' => 'widget-area-3',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
-
-     // Define Sidebar Widget Area 2
-    register_sidebar(array(
-        'name' => __('Sidebar 4', ''),
-        'description' => __('Description for this widget-area...', ''),
-        'id' => 'widget-area-4',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
-    ));
-	
+	register_sidebar( array(
+		'name'          => __( 'Blog Sidebar', 'twentyseventeen' ),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your sidebar on blog posts and archive pages.', 'twentyseventeen' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 
 	register_sidebar( array(
 		'name'          => __( 'Footer 1', 'twentyseventeen' ),
-		'id'            => 'footer-1',
+		'id'            => 'sidebar-2',
 		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="hidden">',
+		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
 
 	register_sidebar( array(
-		'name'          => __( 'Mobile-sidebar 1', 'twentyseventeen' ),
-		'id'            => 'mobile-1',
+		'name'          => __( 'Footer 2', 'twentyseventeen' ),
+		'id'            => 'sidebar-3',
 		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="hidden">',
+		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Mobile-sidebar 2', 'twentyseventeen' ),
-		'id'            => 'mobile-2',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h1 class="hidden">',
-		'after_title'   => '</h1>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Mobile-sidebar 3', 'twentyseventeen' ),
-		'id'            => 'mobile-3',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<p class="hidden">',
-		'after_title'   => '</p>',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Mobile-sidebar 4', 'twentyseventeen' ),
-		'id'            => 'mobile-4',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<p class="hidden">',
-		'after_title'   => '</p>',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Home 1', 'twentyseventeen' ),
-		'id'            => 'sidebar-6',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<p class="hidden">',
-		'after_title'   => '</p>',
-	) );
-
-	register_sidebar( array(
-		'name'          => __( 'Page 1', 'twentyseventeen' ),
-		'id'            => 'sidebar-7',
-		'description'   => __( 'Add widgets here to appear in your footer.', 'twentyseventeen' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<p class="hidden">',
-		'after_title'   => '</p>',
 	) );
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
@@ -431,6 +349,7 @@ add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
  *
  * @since Twenty Seventeen 1.0
  *
+ * @param string $link Link to single post/page.
  * @return string 'Continue reading' link prepended with an ellipsis.
  */
 function twentyseventeen_excerpt_more( $link ) {
@@ -447,18 +366,6 @@ function twentyseventeen_excerpt_more( $link ) {
 }
 add_filter( 'excerpt_more', 'twentyseventeen_excerpt_more' );
 
-add_filter('walker_nav_menu_start_el', 'maiorano_generate_nav_images', 20, 4);
-function maiorano_generate_nav_images($item_output, $item, $depth, $args){
-    if(has_post_thumbnail($item->object_id)){
-        $dom = new DOMDocument(); //DOM Parser because RegEx is a terrible idea
-        $dom->loadHTML($item_output); //Load the markup provided by the original walker
-        $img = $dom->createDocumentFragment(); //Create arbitrary Element
-        $img->appendXML(get_the_post_thumbnail($item->object_id, 'thumbnail')); //Apply image data via string
-        $dom->getElementsByTagName('a')->item(0)->appendChild($img); //Append the image to the link
-        $item_output = $dom->saveHTML(); //Replace the original output
-    }
-    return $item_output;
-}
 /**
  * Handles JavaScript detection.
  *
@@ -493,17 +400,62 @@ function twentyseventeen_colors_css_wrap() {
 	$hue = absint( get_theme_mod( 'colorscheme_hue', 250 ) );
 ?>
 	<style type="text/css" id="custom-theme-colors" <?php if ( is_customize_preview() ) { echo 'data-hue="' . $hue . '"'; } ?>>
-		
+		<?php echo twentyseventeen_custom_colors_css(); ?>
 	</style>
 <?php }
-
+add_action( 'wp_head', 'twentyseventeen_colors_css_wrap' );
 
 /**
  * Enqueue scripts and styles.
  */
 function twentyseventeen_scripts() {
 	// Add custom fonts, used in the main stylesheet.
+	wp_enqueue_style( 'twentyseventeen-fonts', twentyseventeen_fonts_url(), array(), null );
 
+	// Theme stylesheet.
+	wp_enqueue_style( 'twentyseventeen-style', get_stylesheet_uri() );
+
+	// Load the dark colorscheme.
+	if ( 'dark' === get_theme_mod( 'colorscheme', 'light' ) || is_customize_preview() ) {
+		wp_enqueue_style( 'twentyseventeen-colors-dark', get_theme_file_uri( '/assets/css/colors-dark.css' ), array( 'twentyseventeen-style' ), '1.0' );
+	}
+
+	// Load the Internet Explorer 9 specific stylesheet, to fix display issues in the Customizer.
+	if ( is_customize_preview() ) {
+		wp_enqueue_style( 'twentyseventeen-ie9', get_theme_file_uri( '/assets/css/ie9.css' ), array( 'twentyseventeen-style' ), '1.0' );
+		wp_style_add_data( 'twentyseventeen-ie9', 'conditional', 'IE 9' );
+	}
+
+	// Load the Internet Explorer 8 specific stylesheet.
+	wp_enqueue_style( 'twentyseventeen-ie8', get_theme_file_uri( '/assets/css/ie8.css' ), array( 'twentyseventeen-style' ), '1.0' );
+	wp_style_add_data( 'twentyseventeen-ie8', 'conditional', 'lt IE 9' );
+
+	// Load the html5 shiv.
+	wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/html5.js' ), array(), '3.7.3' );
+	wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
+
+	wp_enqueue_script( 'twentyseventeen-skip-link-focus-fix', get_theme_file_uri( '/assets/js/skip-link-focus-fix.js' ), array(), '1.0', true );
+
+	$twentyseventeen_l10n = array(
+		'quote'          => twentyseventeen_get_svg( array( 'icon' => 'quote-right' ) ),
+	);
+
+	if ( has_nav_menu( 'top' ) ) {
+		wp_enqueue_script( 'twentyseventeen-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '1.0', true );
+		$twentyseventeen_l10n['expand']         = __( 'Expand child menu', 'twentyseventeen' );
+		$twentyseventeen_l10n['collapse']       = __( 'Collapse child menu', 'twentyseventeen' );
+		$twentyseventeen_l10n['icon']           = twentyseventeen_get_svg( array( 'icon' => 'angle-down', 'fallback' => true ) );
+	}
+
+	wp_enqueue_script( 'twentyseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
+
+	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
+
+	wp_localize_script( 'twentyseventeen-skip-link-focus-fix', 'twentyseventeenScreenReaderText', $twentyseventeen_l10n );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
 add_action( 'wp_enqueue_scripts', 'twentyseventeen_scripts' );
 
@@ -562,7 +514,7 @@ add_filter( 'get_header_image_tag', 'twentyseventeen_header_image_tag', 10, 3 );
  * @param array $attr       Attributes for the image markup.
  * @param int   $attachment Image attachment ID.
  * @param array $size       Registered image size or flat array of height and width dimensions.
- * @return string A source size value for use in a post thumbnail 'sizes' attribute.
+ * @return array The filtered attributes for the image markup.
  */
 function twentyseventeen_post_thumbnail_sizes_attr( $attr, $attachment, $size ) {
 	if ( is_archive() || is_search() || is_home() ) {
@@ -588,6 +540,25 @@ function twentyseventeen_front_page_template( $template ) {
 	return is_home() ? '' : $template;
 }
 add_filter( 'frontpage_template',  'twentyseventeen_front_page_template' );
+
+/**
+ * Modifies tag cloud widget arguments to display all tags in the same font size
+ * and use list format for better accessibility.
+ *
+ * @since Twenty Seventeen 1.4
+ *
+ * @param array $args Arguments for tag cloud widget.
+ * @return array The filtered arguments for tag cloud widget.
+ */
+function twentyseventeen_widget_tag_cloud_args( $args ) {
+	$args['largest']  = 1;
+	$args['smallest'] = 1;
+	$args['unit']     = 'em';
+	$args['format']   = 'list';
+
+	return $args;
+}
+add_filter( 'widget_tag_cloud_args', 'twentyseventeen_widget_tag_cloud_args' );
 
 /**
  * Implement the Custom Header feature.

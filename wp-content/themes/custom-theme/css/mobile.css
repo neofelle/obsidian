@@ -62,7 +62,7 @@
 }
 
 /*Styles for screen 600px and lower*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .mobiletop { 
       height: auto;
     }
@@ -108,8 +108,12 @@
 }
 
 /*Styles for screen 515px and lower*/
-@media only screen and (max-width : 768px) {
-
+@media only screen and (max-width : 991px) {
+  li.menu-item {
+      padding-top: 0.7vw;
+      padding-bottom: 0.7vw;
+      margin-left: 0px !important;
+  }
   .mobiletop {
     display: block;
     border-bottom: 0;
@@ -134,6 +138,7 @@
   .tablet-s4{
     display: none !important;
   }
+
   .mobile-s4{
     display: block !important;
   }

@@ -32,7 +32,10 @@ Version: 1.2
 .sidebar-768 {
 	display: none;
 }
-
+ul#menu-sidebar-1 > li {
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
 .sidebar-480 {
 	display: none;
 }
@@ -376,7 +379,7 @@ a.nav-home.text-caps {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	background-color: #9f773e;
+	background-color: #986d2f;
 }
 
 a.nav-home.text-caps {
@@ -470,13 +473,14 @@ li.menu-item{
 }
 
 .sidebar-1 ul li {
-	margin-left: 0%;
-	border-bottom: 2px solid #9f773e;
-	margin:auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	background-color: #9f773e;
+	margin-left: 0% !important;
+	border-bottom: 2px solid #ab8753 !important;
+	margin:auto !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	background-color: #986d2f !important;
 }
+
 
 
 .sidebar-1 li:last-child {		
@@ -952,7 +956,7 @@ a.black-button {
 }
 
 .top-nav-holder {
-	background: #000000;
+	background: white;
 	overflow: hidden;
 	/*border-bottom: 15px solid #fff;*/
 	display: flex;

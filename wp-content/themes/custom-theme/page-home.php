@@ -196,7 +196,7 @@ Template Name: Homepage
     </ul>
   </div>
 </div>
-<div class="col span_12_of_12 section-5-mobile" style="background-color: #986d2f;padding-right: 20px;">
+<div class="col span_12_of_12 section-5-mobile" style="background-color: #986d2f;padding-right: 14px;padding-left: 14px;">
   <div class="col span_12_of_12">
     <div class="business-container" style="text-align: center;">
       <h1 class="business-header">if you do not plan for your <br/>exit from your business</h1>
@@ -332,7 +332,7 @@ Template Name: Homepage
   <div class="col span_12_of_12  bg-left" style="background-color: white;display: flex;justify-content: center;">
     <div class="business-container-2">
       <h1 style="color:#102157;text-align: center;" class="section-6-header">At Obsidian Planning Solutions We:</h1>
-      <ul style="list-style: none;padding-top: 20px;padding-bottom: 5px;">
+      <ul style="list-style: none;padding-top: 20px;padding-bottom: 5px;position: relative;left: 10px;">
         <li>
           <label class="container-checkbox" style="color:black !important;">Help you enjoy life to the fullest now and after you exit your business
             <input type="checkbox" checked="checked">

@@ -141,9 +141,21 @@
 		<?php } ?>
 	</ul>	
 </nav>
-
 <!-- container -->
-<div class="section group container">
+<div class="section group container" style="width: 100%;">
+	<div class="desktop-nav-1 vd-menu">
+		<div class="col sp-6" style="margin: 0 auto;">
+			<header id="masthead" class="site-header" role="banner">
+				<?php if ( has_nav_menu( 'top' ) ) : ?>
+					<div class="navigation-top">
+						<div class="wrap">
+							<?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+						</div><!-- .wrap -->
+					</div><!-- .navigation-top -->
+				<?php endif; ?>
+			</header><!-- #masthead -->
+		</div>
+	</div>
 	<div class="col span_12_of_12 nav_main desktop-nav-1">
 	    <div class="top-nav-holder desktop-nav-1">
 	      	<div class="col span_4_of_12 top-nav n1">
@@ -154,7 +166,9 @@
 				</div>
 	      	</div>
 	        <div class="col span_6_of_12 top-nav n2">
- 				<?php wp_nav_menu( array( "menu_id" => "MAIN-MENU", 'container_class' => 'my_extra_menu_class' ) ); ?> 
+
+
+
 	        </div> <!-- /top-nav -->
 	        <div class="col span_2_of_12 top-contact n3" style="padding-top: 0px;margin-top: 20px;height: 45px;border-left: 1px solid #112057;">
 	          <!-- <img src="https://www.customwinecellarssandiego.com/wp-content/themes/customwinecellars_template/images/Custom Wine Cellars San Diego Phone.png" alt="Custom Wine Cellars San Diego Phone"> -->
@@ -183,7 +197,7 @@
 	        </div> <!-- /top-nav -->
 	    </div> <!-- /top-nav-holder -->
 		<!-- Mobile -->
-		<div class="top-nav-holder-768">
+		<div class="top-nav-holder-768" style="position: relative;">
 			<!-- call-us-container -->
 			<div class="col span_8_of_12 menu-left-480">
 				<div  style="padding-left: 25px !important;position: relative !important;top: 10px !important;">
