@@ -19,10 +19,10 @@ Template Name: Review
       <br style="clear: both;">
       <div class="col span_12_of_12 mr-top" style="">
         <div class="col span_6_of_12" style="">
-          <a href="#" class="button-portal-1 button-right"><img class="icon-portal" src="<?php bloginfo('template_directory'); ?>/images/portal/portal-icon-1.png">INDIVIDUAL PLANNING</a>
+          <a href="https://www.smallbusinesssuccessionplanning.com/what-are-you-looking-for/" class="button-portal-1 button-right"><img class="icon-portal" src="<?php bloginfo('template_directory'); ?>/images/portal/portal-icon-1.png">INDIVIDUAL PLANNING</a>
         </div>
         <div class="col span_6_of_12" style="">
-        <a href="#" class="button-portal-2 button-left"><img class="icon-portal" src="<?php bloginfo('template_directory'); ?>/images/portal/portal-icon-2.png">BUSINESS PLANNING</a>
+        <a href="https://www.smallbusinesssuccessionplanning.com/what-are-you-looking-for/" class="button-portal-2 button-left"><img class="icon-portal" src="<?php bloginfo('template_directory'); ?>/images/portal/portal-icon-2.png">BUSINESS PLANNING</a>
         </div>
       </div>
       <br style="clear:both;"><Br/><Br/>

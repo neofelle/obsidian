@@ -322,8 +322,8 @@ ul li {
     padding-left: 45px;
     padding-right: 45px;
     font-size: 25px;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 8px;
+    padding-bottom: 13px;
     border-radius: 5px;
 }
 .button-right{
@@ -2038,10 +2038,13 @@ h2.remove-margin {
 	    padding: 0;
 	    margin: 0;
 	    list-style: none;
-	    height: 750px;
+	    height: auto;
 	    max-height: 1000px;
 	    background-color: #986d2f;
 	}
+       .sidebar-1.cs-2{ 
+          height:auto !important;
+        }
 }
 /*------------------------------------*\
     1024

@@ -1918,6 +1918,17 @@ h2.remove-margin {
 	.footer-nav ul li {
 	    margin-left: 1%;
 	}
+       .sidebar-1.cs-2{ 
+          height:auto !important;
+        }
+	.sidebar-1 ul, .sidebar-2 ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    height: auto;
+	    max-height: 1000px;
+	    background-color: #986d2f;
+	}
 	.button-contact {
 	    text-transform: uppercase;
 	    color: white;

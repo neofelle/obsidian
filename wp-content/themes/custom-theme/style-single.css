@@ -2047,6 +2047,17 @@ input.wpcf7-form-control.wpcf7-submit {
 		width: 100%;
 		height: 941px;
 	}
+	.sidebar-1 ul, .sidebar-2 ul {
+	    padding: 0;
+	    margin: 0;
+	    list-style: none;
+	    height: auto;
+	    max-height: 1000px;
+	    background-color: #986d2f;
+	}
+       .sidebar-1.cs-2{ 
+          height:auto !important;
+        }
 }
 
 /*------------------------------------*\
